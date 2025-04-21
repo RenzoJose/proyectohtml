@@ -1,0 +1,111 @@
+
+/* Propiedad display
+nos sirve para cambiar el contextode los elelemntos dentro del navegador
+
+admite varios valores:
+none: que hace que el elemento no se muestre, pero siga cargandose
+block: hace que el elemento sea de bloque 
+inline: hace que el elemneto sea de linea pero admite medidas y margenes verticales 
+
+*/
+ /* Propiedad Outline
+    Outline es la propiedad que nos permite dibujar un borde por fuera del modelo de caja.
+    Es un shorthand que engloba
+        outline-width: Controla el ancho del ouline
+        outline-style: Controla el estilo del outline
+        outline-color: Controla el color del outline
+
+    Tiene las mísmas propiedades y sintaxis que border, pero con algunas diferencias.
+        No ocupa sitio, ya que no forma parte del box-model
+        No se puede redondear
+        No se pueden controlar los lados de forma independiente
+
+    También cuenta con la propiedad outline-offset, que nos permite aumentar o disminuir la distancia del outline respecto a la caja a la que pertence */
+
+    /*  Propiedad Text-align 
+    propiedad que nos permite alinear horizontalmente el contenido de un elemento de bloque siempre que el contenido NO TENGA ANCHO DECLARADO----- > OJO
+    Acepta 4 posibles valores
+        text-align:left; -> Alinea el contenido a la izquierda
+        text-align:right; -> Alinea el contenido a la derecha
+        text-align:center; -> Alinea el contenido al centro
+        text-align:justify; -> Alinea el contenido de forma justificada. No es recomendable usarlo.
+ */
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(80, 118, 255);
+    margin-top: 0;
+    margin-left: 0,5;
+    margin-right: 0,5;
+}
+.display p{
+background-color: lightcoral;
+text-align: justify;
+}
+.caja1{
+    margin-bottom: 30px;
+
+}
+.cabecera{
+    background-color: lightcoral;
+    height: 100px;
+    margin-bottom: 20px;
+    /*  CON ESAS 3 OPCIONES SE PUEDE CORREGIR Margenes DE PADRES E HIJOS */
+    /* overflow: hidden; */
+    /* padding-top: 0.1px; */
+    /* border-top: 0.1px solid lightcoral; */
+}
+
+.border, .outline{
+    background-color: rgb(0, 255, 149);
+    width: 150px;
+    height: 100px;
+    margin: 50px 50px;
+    
+   
+}
+/* ALINIACION DE CONTENIDO EN UNA CAJA CON TEXT ALIGN */
+.border{
+    border: 2px solid lightcyan;
+    text-align: center;
+    padding-top: 35px;
+}
+
+.outline{
+    outline: 5px dashed rgb(180, 157, 184);
+    /* con outline-offset controlamos la distanciacon respecto a la caja  puede estar pOr fuera opor dentro sin alterar el espacio*/
+    outline-offset: -15px ;
+    border: 15px solid lightslategray;
+    padding: 25px;
+}
+
+.caja1, .caja2{
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid brown;
+}
+/* ALINEACION DE CONTENIDO EN UN ELEMENTO EN LINEA */
+.enlacecenter{
+color: white;
+display: block;
+text-align: center;
+margin-top: 10px;
+}
+
+/* en el caso de que la imagen este dentro de un bloque contenedor, si se centra, porque centra el contenido del bloque en este caso la imagen  */
+.contendor-imagen{
+    text-align: center;
+    background-color: aliceblue;
+}
+/*  en caso que la imagen este fuera de un elemento de bloque, la imagen es el mismo contenido, es decir, ya ocupa todo el ancho del contenido y ese caso no funciona text-align, porque ya es un elemento independiente y hay que darle margenes  */
+/* .imagen{
+ margin: 20px 350px 20px;    
+background-color: aliceblue;
+ } */

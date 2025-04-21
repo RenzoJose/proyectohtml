@@ -1,0 +1,332 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+@font-face {
+    font-family: 'nintendo';
+    src: url(/asset/fuentes/Early\ GameBoy.ttf);
+}
+p{
+    position: relative;
+    top: 65px;
+
+    font-family: 'nintendo';
+    text-align: center;
+}
+.control{
+    position: relative;
+
+    width:25rem;
+    height:41rem;
+    margin: 20px auto 20px;
+
+    border-radius: 10px 10px 100px 10px;
+    background-color: #5553;
+    box-shadow: 2px 2px 5px #5555;
+}
+.parte-superior{
+    position: relative;
+    height: 3.5rem;
+
+    border-bottom: 5px solid rgba(155, 155, 155, 0.1);
+}
+
+.superior-1{
+    position: absolute;
+    left: 60px;
+
+    display: inline-block;
+    width: 0px;
+    height: 3.5rem;
+    
+    border-color: rgb(155, 155, 155, 0.1);
+    border-style: solid;
+    
+}
+.superior-2{
+    position: absolute;
+    right: 60px;
+
+    display: inline-block;
+    width: 0px;
+    height: 3.5rem;
+   
+    border-color: rgb(155, 155, 155, 0.1);
+    border-style: solid;
+    
+}
+
+.pantalla{
+    position: relative;
+
+    width: 340px;
+    height: 260px;
+    margin: 20px auto 10px;
+
+    background-color: rgb(50, 50, 50);
+    border-radius: 5px 5px 50px 5px;
+
+}
+
+.punto{
+    position: relative;
+    top: 70px;
+    left: 18px;
+
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+
+    background-color: red;
+    border-radius: 10px;
+    
+}
+.pantalla-interna{
+    position: relative;
+    top:20px ;
+    left: 36px;
+
+    display: inline-block;
+    width: 250px;
+    height: 200px;
+
+    background-color: yellowgreen;
+       
+}
+
+.encabezado{
+    position: relative;
+    top: 7px;
+    height:5px;
+}
+
+.rojo-red{
+    background-color: RED;
+
+}
+.azul{
+    top:10px;
+    background-color: blue;
+}
+
+.texto-superior{
+position: absolute;
+left: 40px;
+z-index: 10;
+
+color: #fff;
+background-color: rgb(50 50 50);
+
+}
+.bateria{
+    position: absolute;
+    top:120px;
+    left: 5px;
+
+    font-size: 0.6rem;
+
+    color: #fff;
+  
+}
+.text-gameboy{
+   display: block;
+
+   text-align: center;
+    
+}
+.controles-mando{
+    position: relative;
+}
+.triangulo{
+    position: absolute;
+    left: 50px;
+    z-index: 12;
+
+    display: block;
+    width: 0px;
+
+    border-bottom: 10px solid #444;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+     
+}
+.triangulo-1{
+    top: 0;
+    left:9px ;
+}
+.triangulo-3{
+    bottom: 0;
+    left: 9px;
+    transform: rotate(180deg);
+}
+.triangulo-2{
+    top:0;
+    left: 9px ;
+}
+.triangulo-4{
+    bottom: 0;
+    left: 9px;
+    transform: rotate(180deg);
+}
+.cruz{
+
+   display: inline-block;
+   width: 70%;
+   margin-top: 20px;
+    
+}
+.btn{
+
+    width: 40px;
+    height: 60px;
+
+    background-color: #555;
+    border-radius: 5px;
+        
+}
+.btn-1, .btn-2{
+    position: relative;
+    left: 70px;
+
+    display: block;
+    
+}
+.btn-1{
+    bottom: 5px;
+}
+.btn-3, .btn-4{
+    position: absolute;
+    bottom: 40px;
+
+    display: inline-block;
+        
+    transform: rotate(90deg);
+}
+.btn-3{
+    left: 30px;
+}
+.btn-4{
+   left: 110px;
+}
+.circle-cruz{
+    position: absolute;
+    top: 52px;
+    left: 67px;
+    z-index: 10;
+
+    width: 45px;
+    height:45px;
+    overflow: hidden;
+
+    border-radius: 50px;
+    background-color: #444;
+     
+}
+.botones{
+position: absolute;;
+bottom: 0px;
+
+display:inline-block ;
+width: 60px;
+height: 140px;
+
+border-radius: 25px;
+background-color: #5553 ;
+transform: rotate(60deg);
+
+}
+.texto-ab{
+position: absolute;
+
+transform: rotate(-90deg);
+
+}
+.letra-b{
+    bottom: 30px;
+    right: -12px;
+}
+.letra-a{
+    top:25px;
+    right:-12px;
+}
+.boton-rojo{
+    position:relative;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50px;
+    background-color: red;
+    
+}  
+.rojo-b{
+ top:25px;
+ left: 5px;
+}
+.rojo-a{
+    top: 10px;
+    left: 5px;
+}
+.botones-inferiores{
+    position: relative;
+
+    text-align: center;
+}
+
+.gris-boton{
+    position: relative;
+
+    width: 20px;
+    height: 70px;
+
+    border-radius: 10px;
+    transform: rotate(60deg);
+}
+.buttom-2{
+    left: 3rem;
+}
+.select, .start{
+    position: relative;
+    bottom: 8px;
+
+    display: inline-block;
+
+    transform: rotate(-30deg);
+    
+}
+.select{
+    
+    left:-35px ;
+}
+.start{
+    
+    left: 18px;
+}
+.contenedor-inferior{
+    position: absolute;
+    right: 0;
+    bottom: 18px;
+
+    width: 120px;
+    overflow: hidden;
+
+    transform: rotate(-35deg);
+    
+   
+}
+.box{
+    position: relative;
+
+    display: inline-block;
+    width: 5px;
+    height: 50px;
+    margin: 5px;
+
+    border-radius: 2px;
+    background-color: #5555;
+   
+}
+
+

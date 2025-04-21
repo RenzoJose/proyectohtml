@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura Basica de un Formulario</title>
+</head>
+<!-- La estructura basica de un formulario se compone de 4 elemntos 
+ 
+form = que es la etiqueta que engloba nuestro formulario
+label= sirve para escribir el nombre del campo a rellenar
+DEBE DE TENER EL ATRIBUTO for AL CUAL SE LE INDICA UN id QUE LO QUE HARA, SERA EMAREJAR EL label con su input CORRESPONDIENTE
+
+input= sirve para crear un campo que permita al usuario interacturar
+ input type:
+ button= se comporta igual que un boton pero sin enviar el formulario 
+ submit= se utiliza para enviar el formulario
+ 
+ 
+ date= se utiliza para introducir fechas 
+ datetime=obsoleto
+ datetime-local= fecha y hora, no funciona firefox
+ time=colocar la hora
+ month= introduccion de meses
+ week= se utiliza para introducir el numero de semanas del año 
+
+  serch= seutiliza para las barras de busqueda 
+  tel= introducir numeros telefonicos
+  email= introduccion de correo
+  password= para introducir contraseña
+  url=colocar direcciones url
+
+  hidden= campo oculto, puede contener valor pero no se mostrara
+
+  color= se utiliza para especificar el color
+  number=para valores numericos
+  range= para estableer un rango 
+  reset=se utiliza para resetear el formulario 
+  text=valor por defecto tipo texto
+  -->
+<body>
+    <form>
+        <!-- <label>NOMBRE DEL FORMULARIO</label>
+        <input type="date">
+        <input type="datetime-local">
+        <input type="date">
+        <input type="time">
+        <input type="month">
+        <input type="week"> -->
+
+
+        <!-- <div> 
+        <input type="text"></div>
+        <input type="submit" value=" enviar input" name="valor1">
+
+        <button> Enviar Formulario</button> -->
+        <div>
+            <label> Busqueda
+                <input type="search">
+            </label>
+        </div>
+        <div>
+            <label> Telefono
+                <input type="tel">
+            </label>
+        </div>
+        <div>
+            <label> Correo
+                <input type="email">
+            </label>
+        </div>
+        <div>
+            <label> Contraseña
+                <input type="password">
+            </label>
+        </div>
+        <div>
+            <label> Direccion URL
+                <input type="url">
+            </label>
+        </div>
+    </form>
+
+</body>
+</html>

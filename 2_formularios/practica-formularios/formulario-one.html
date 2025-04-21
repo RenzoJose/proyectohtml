@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario De Datos 1</title>
+</head>
+
+<!-- <style>
+ 
+  #formuario-direcion{
+    
+   padding-bottom: 20%;
+ } 
+
+ .contenedor{
+ max-width: max-content;
+
+ 
+ }
+
+</style> -->
+<body>
+    <form action="misdatos.php" method="post" class="contenedor">
+        <fieldset>
+            <legend><b>MIS DATOS</b></legend>
+            <ol>
+                <li>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escriba aqui su Nombre" required>
+                    
+                </li>
+                <li>
+                    <label for="correo">Correo Electronico </label>
+                    <input type="email" id="correo" name="correo" placeholder="ejemplo@domino.com" required>
+                   
+                </li>
+                <li>
+                    <label for="telefono">Telefono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="+56953160824" required >
+                    
+                </li>
+            </ol>
+   
+        </fieldset>
+   
+        <fieldset id="formuario-direcion">
+            <legend><b>DIRECCION</b></legend>
+            <ol>
+                <li>
+                    <label for="direccion">Direccion</label>
+                    <textarea name="direccion" id="direccion" required></textarea>
+                    
+                </li>
+                <li>
+                    <label for="codigo-postal">Codigo Postal</label>
+                    <input type="text" id="codigo-postal" name="codigo-postal" placeholder="CP"  required>
+                    
+                </li>
+                <li>
+                    <label for="ciudad">Ciudad</label>
+                    <input type="text" id="ciudad" name="ciudad" placeholder="ciudad" required>
+
+                    
+                </li>
+            </ol>
+        </fieldset>
+  
+        <fieldset>
+            <legend><b>FORMAS DE PAGO</b></legend>
+            <ol>
+                <li>
+                    
+                    <fieldset>
+                        <legend><b>TARJETA DE CREDITO</b></legend>
+                        <ul>
+                            <li>
+                                <label for="visa">
+                                    <input type="radio" id="visa" name="tipos-tarjeta" value="VISA">
+                                    VISA
+                                </label>
+                            </li>
+                            
+                            <li>
+                                <label for="america">
+                                    <input type="radio" id="america" name="tipos-tarjeta" value="America Express">
+                                    America Express
+                                </label>
+                                
+                            </li>
+                            <li>
+                                <label for="master-card" >
+                                    <input type="radio" id="master-card" name="tipos-tarjeta" value="Master Card">
+                                    Master Card
+                                </label>
+                                
+                            </li>
+                        </ul>
+                    </fieldset>
+                    
+                    
+                </li>
+
+                <li>
+                    <label for="numero-tarjeta">Numero de Tarjeta</label>
+                    <input type="text" id="numero-tarjeta" name="numero-tarjeta"  placeholder="Numero de Tarjeta" maxlength="12">
+
+                    
+                 </li>
+                <li>
+                    <label for="codigo-seguridad">Codigo de Seguridad</label>
+                    <input type="password" id="codigo-seguridad" name="codigo-seguridad" placeholder="introducir codigo de seguridad" required>
+                    
+                </li>
+                <li>
+                    <label for="nombre-tarjeta">Nombre de Tarjeta</label>
+                    <input type="text" id="nombre-tarjeta" name="nombre-tarjeta" placeholder="Nombre Exacto de tarjeta" required>
+                    
+                </li>
+              
+            </ol>
+        </fieldset>
+
+        <fieldset>
+          
+        <button>COMPRAR</button>
+
+    </fieldset>
+    </form>
+
+
+    
+</body>
+</html>

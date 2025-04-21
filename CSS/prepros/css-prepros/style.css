@@ -1,0 +1,248 @@
+
+/* margin: es la propiedad que nos permite general espacio entre los elementos
+es un shorthand(propiedad abreviada) que controla los cuatro lados posibles a los que dar margenes.
+margin-top: margen superior
+margin-right: margen derecho
+margin-bottom: margen inferior
+margin-left: margen izquierdo
+
+admite hasta 4 valores que van en el orden de las agujas del reloj 
+4 valores  margin: top, right, bottom, left;
+3 valores margin: top, left/right, bottom;
+2 valores margin: top/bottom, left/right
+1 valor margin: top/ right/ bottom/ left
+
+los elementos en linea solo tienes margenes horizontales
+y los elementos en bloque tienen margenes en los 4 lados, para que funcione tiene que tener un ancho declarado
+
+*/
+
+
+/* padding: es la propiedad que nos permite generar espacios internos entre el borde y la caja 
+es un shorthand (propiedad abreviada) que controla los 4 lados posibles:
+padding-top: relleno superior
+padding-right: relleno derecho
+padding-bottom: relleno inferior
+padding-left: relleno izquierdo
+
+admite hasta 4 valores que van en el orden de las agujas del reloj 
+4 valores  padding: top, right, bottom, left;
+3 valores padding: top, lef/tright, bottom;
+2 valores padding: top/bottom, left/right
+1 valor padding: top/ right/ bottom/ left
+
+nota: el padding si se aplican las medidad a los elementos en linea
+
+*/
+
+/* boder
+es la propiedad que nos permite modificar el borde de la caja 
+ tambien es un shorthand(propiedad abreviada) que que agrupa 3 propiedades:
+    border-width: ancho del borde
+        border-top-width
+        border-right-width
+        border-bottom-width
+        border-left-width
+    border-style: estilo del borde
+        border-top-style
+        border-right-style
+        border-bottom-style
+        border-left-style
+            listado de valores de estilo:
+            none: ninguno
+            hidden: oculto
+            dotted: borde con puntos (width controla el tamaño)
+            dashed: bordes con lineas (width controla la anchura)
+            solid: borde solido
+            double: doble linea (cuando le damos tamaño, divide entre 3 el valor)
+            groove: hace una sombra en 3d parte superior y sobra interna inferior
+            ridge: hace lo mismo que groove pero al reves las sombras
+            inset: hace lo mismo que groove pero sin forma 3d
+            outset: hace lo mismo pero inset pero invirtiendo la sombra
+    border-color: color del borde 
+        border-top-color
+        border-right-color
+        border-bottom-color
+        border-left-color
+
+   
+ */
+ /* box-sizing: es la propiedad que nos permite controlar el calculo que hace el navegador a la hora de modificar las propiedades content,padding y border.
+  los 2 valores que podemos darle son: 
+  content-box = valor por defecto , el calculo que realiza va ser solo el contenido (content), también llamado tamaño del elemento
+  border-box= calculo de tamaño del elemento incluyendo el padding y el border
+  nota: content: es el contendio de la caja y suma a la hora de calcular el box-sizing  */
+
+
+/*   Border-radius: 
+    Es la propiedad que nos permite redondear vértices de forma independiente.
+
+    Es un shorthand que engloba 4 propiedades:
+        border-top-left-radius -> Radio del borde superior izquierdo
+        border-top-right-radius -> Radio del borde superior derecho
+        border-bottom-right-radius -> Radio del borde inferior derecho
+        border-bottom-left-radius -> Radio del borde inferior izquierdo
+
+    nota: Si sólo recibe un valor APLICARA EL VALOR EN LOS 4 vértice DEL CUADRO 
+
+    border-top-right-radius: 50px; -> Círculo con 50px de radio
+
+    Si recibe dos valores dibujará una elipse en el vértice que especifiquemos
+
+    border-top-right-radius: 50px 100px; -> Elipse con 50px en el radio X y 100px en el radio Y
+
+    Si utilizamos el border-radius como shorthand hay diferencias entre si queremos dar un valor a cada lado (círculo) o dos (elipse)
+
+    Con un solo valor:
+        border-radius: 50px; -> Círculo de 50px a cada vértice
+        border-radius: 50px 100px; -> Círculo de 50px en el vértice superior izquierdo y en el inferior derecho y de 100px en el superior derecho y el inferior izquierdo
+        border-radius: 50px 100px 200px; -> Círculo de 50px en el vértice superior izquierdo, de 100px en el superior derecho y el inferior izquierdo y de 200px en el inferior derecho.
+        border-radius: 50px 100px 200px 300px; -> Círculo de 50px en el vértice superior izquierdo, de 100px en el superior derecho, de 200px en el inferior derecho y de 300px en el inferior izquierdo.
+
+    Si le damos 2 valores separados por una barra dibujará una elipse en cada vértice con los radios que le especifiquemos.
+    border radius: 50px / 100px; -> Elipse con 50px en el radio X y 100px en el radio Y
+
+    Con dos valores:
+        Al tener dos radios debemos agrupar los radios y separarlos por una barra.
+        border-radius: 25px / 50px; -> Elipse de 25px en Y y 50px en X a cada vértice.
+
+        border-radius: 25px 50px / 50px 100px; -> Elipse de 25px en Y y 50px en X a los vértices superior izquierdo e inferior derecho y una elipse de 50px en Y y 100px en X en los vértices superior derecho e inferior izquierdo.
+
+        border-radius: 25px 50px 75px / 50px 100px 150px; ->
+        Elipse de 25px en Y y 50px en X al vértice superior izquierdo, una elipse de 50px en Y y 100px en X en los vértices superior derecho e inferior izquierdo y una elipse de 75px en Y y de 150px en X al vértice inferior derecho.
+
+        border-radius: 25px 50px 75px 100px / 50px 100px 150px 200px; -> Elipse de 25px en Y y 50px en X al vértice superior izquierdo, una elipse de 50px en Y y 100px en X en el vértice superior derecho, una elipse de 75px en Y y de 150px en X al vértice inferior derecho y una elipse de 100px en X y 200px en Y en el vértice inferior izquierdo.
+*/
+
+/* Decimos que un contenido se desborda 
+cuando la caja es más pequeña que el contenedor
+    Overflow:
+        Es la propiedad que controla qué debe hacer la caja cuando su contenido se desborda del contenedor.
+        Es un shorthand que engloba overflow-x y overflow-y
+        Tiene cuatro posibles valores:
+            visible -> Es el valor por defecto, es decir que siempre sea visible
+            hidden -> El contenido que se desborde no se verá, queda oculto. Si aplicamos esta propiedad en un solo eje, el otro se pondrá automáticamente en el valor scroll.
+            scroll -> Aparecerán barras de scroll en el eje asignado (x, y o ambos)
+            auto -> Aparecerán barras de scroll en el caso de que hicieran falta. */
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #6b1f1f;
+    color:#fff;
+    
+
+}
+/*  practica de margenes, para dar margenes obligado dar ancho o alto dependiendo el caso  */
+.titulo{
+    background-color: rgb(140, 0, 255);
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* practica elemento en bloque margenes, bordes, padding y contenido  */
+.bloque{
+    background-color: rgb(38, 0, 255);
+    width:200px;
+    height:100px;
+  
+   margin-left: auto;
+   margin-right: auto;
+   padding: 10px 10px 10px;
+
+   border: 2px outset red;
+}
+/* practica de elementos en linea solo funcionan con margenes horizontales */
+.linea{
+    background-color: lightcoral;
+    color:inherit;
+    margin-left: 100px;
+}
+/* practica content, padding, border, margin con  box-sizing: border-box con selector universal */
+.contenedor{
+
+    background-color: steelblue;
+    width: 525px;
+    height: 220px;
+    margin-top: 20px;
+    margin-left: 50px;
+    padding: 50px 150px;
+     /*border esta secuencia engloba,  tamaño(width) estilo(style) y color  */
+    /* border: 15px outset red; */
+    border-width: 8px;
+    border-style: outset;
+    border-color:darkgreen;
+   
+}
+
+
+.caja{
+    
+   background-color:red ;
+   width: 177px;
+   height: 100px;
+   margin: auto;
+   padding: 13px;
+   border: 4px groove springgreen
+ 
+}
+
+/* practica con border radios */
+
+.box-radius{
+    background-color: darkorange;
+    width: 200px;
+    height: 200px;
+    margin: 30px 200px 30px;
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px; */
+    /* con border-radius se aplica a los 4 vertices  */
+    /* border-radius: 30px; */
+
+
+    /* border con elipse para diferenciarlos se separa con una barra */
+    /* aplica la elipse a todos los border  */
+   border-radius: 50px / 50px;
+
+   /* aplica la elipse a las caras opuestas de cada vertice donde el primer valor 50px es Y  / 25px es x es la primera elipse SUPERIOR IZQUIERDO  y la segunda es 25px es Y / 50px es X  SUPERIOR DERECHO*/
+   border-radius: 50px 25px / 25px 50px;
+
+   /*  CON 3 VALORES SE APLICA LO MISMO SOLO QUE EL SEGUNDO VERTICE ELIPTICO QUE SE FORMA CORRESPONDE A LA CARA OPUESTA DEL VERTICE ES DECIR SUPERIOR DERECHO, CON INFERIOR IZQUIERDO */
+
+   border-radius: 60px 50px 5px / 60px 30px 5px;
+   
+   /* y con 4 valores se le asigna a los 4 vertices elipticos los delas izquierda de la barra corresponden al eje Y , y los de la derecha de la barra corresponde al eje X */
+
+   border-radius: 10px 25px 30px 40px / 20px 15px 25px 30px;
+  
+}
+
+/* desbordamiento propiedad overflow */
+
+.desbordamiento{
+background-color: white;
+color: black;
+width: 250px;
+height:350px;
+margin: 30px 190px 30px;
+
+border-radius: 50px;
+overflow: hidden;
+}
+
+.textodesborde{
+    margin: 0;
+   
+}
+
+.desborde1{
+    width: 250px;
+    padding: 20px;
+    background-color: lightcoral;
+}

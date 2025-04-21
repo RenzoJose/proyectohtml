@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tablas</title>
+    <style>
+        /* col:nth-child(1){ background-color: cadetblue;} 
+
+        col:nth-child(2){background-color: lightcoral;}
+
+        col:nth-child(3){background-color: cadetblue;}
+
+        col:nth-child(4){background-color: lightcoral;}
+
+        col:nth-child(5){background-color: cadetblue;}
+
+        col:nth-child(6){background-color: lightcoral;}  */
+
+        h1 {
+            font-family: sans-serif;
+           
+           border-collapse: collapse;
+           text-align: center;
+           margin-left: auto;
+           margin-right: auto;
+        }
+        
+        table{
+           font-family: sans-serif;
+           border: 2px solid gray;
+           border-collapse: collapse;
+           text-align: center;
+           margin-left: auto;
+           margin-right: auto;
+        }
+
+        caption{
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        th,td{
+            border: 2px solid orangered;
+            padding: .5rem;
+        }
+        tr:nth-child(4) td:nth-child(2) {
+            background-color: chocolate;
+            letter-spacing: 90px;
+            padding-left: 50px;
+            text-transform:  uppercase;
+        } 
+
+        td:first-child, th, tfoot{
+            background-color: blueviolet;
+        }
+
+        
+    </style>
+<!-- nota: dependiendo lo que queremos modificar en la estiqueta <style> la llamamos desde alli! por ejemplo: si queremos modificarlos
+     <td> 
+     td { background-color: cadetblue;
+
+     en el caso <col>
+      col:nth-child(3){ background-color: cadetblue;}-->
+      
+</head>
+<body>
+    <h1>TABLAS</h1>
+    <table>
+        <caption>HORARIO DE CLASE</caption>
+        <colgroup>
+            <col span="1">
+            <col>
+            <col>   
+            <col> 
+            <col> 
+            <col>         
+                   
+        </colgroup>
+        <thead>
+            <th>HORA</th>
+            <th>LUNES</th>
+            <th>MARTES</th>
+            <th>MIERCOLES</th>
+            <th>JUEVES</th>
+            <th>VIERNES</th>
+
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>08:30 - 09:30</td>
+                <td>MATEMATICAS</td>
+                <td>MATEMATICAS</td>
+                <td>SOCIALES</td>
+                <td>MATEMATICAS</td>
+                <td>MATEMATICAS</td>
+            </tr>
+            <tr>
+                <td>09:30 - 10:30</td>
+                <td>EDC. FISICA</td>
+                <td>CIENCIAS</td>
+                <td>LENGUAJE</td>
+                <td>LENGUAJE</td>
+                <td>EDC. FISICA</td>
+            </tr>
+            <tr>
+                <td>10:30 - 11:30</td>
+                <td>INGLES</td>
+                <td>SOCIALES</td>
+                <td>INGLES</td>
+                <td>TUTORIAL</td>
+                <td>INGLES</td>
+            </tr>
+            
+            <tr>
+                <td>11:30 - 12:00</td>
+                <td colspan="5">RECREO</td>
+                
+            </tr>
+            <tr>
+                <td>12:00 - 13:00</td>
+                <td rowspan="2">INGLES</td>
+                <td>SOCIALES</td>
+                <td>INGLES</td>
+                <td>TUTORIAL</td>
+                <td>INGLES</td>
+            </tr>
+            <tr>
+                <td>13:00 - 14:00</td>
+                
+                <td>EDUC. FISICA</td>
+                <td>PLASTICA</td>
+                <td>RELIGION</td>
+                <td>MUSICA</td>
+                
+            </tr>
+            <tr>
+                <td>14:00 - 15:00</td>
+                <td>TECNOLOGIA</td>
+                <td>FRANCES</td>
+                <td>TECNOLOGIA</td>
+                <td>FRANCES</td>
+                <td>TECNOLOGIA</td>
+                
+            </tr>
+            
+            
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">Total Asignaturas</td>
+                <td>12</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+*{
+    /*  el box-sizing Especifica el comportamiento de las propiedades 'width' y 'height'. */
+    /* en este caso el border-box especifica que debe ajustarse hasta el borde de la caja  esto ayuda al ajuste de pantalla es decir al response*/
+    box-sizing: border-box; 
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',  Verdana, sans-serif;
+}
+
+h1{font-size: 4;}
+h2{font-size: 3.5;}
+h3{font-size: 2;}
+p{ font-size: 1.5;}
+ul{list-style: none;}
+ul{font-size: 1.5em;}
+
+button{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid rgb(0,0,0,0);
+    /* sombras box-shadow */
+    box-shadow: 2px 2px 10px rgb(0,0,0,0.5);
+    background-color: rgb(151, 112, 13);
+    color: rgb(29, 37, 37);
+}
+/* propiedad hover es el cambio d color del elemento */
+button:hover{
+ background-color: gold;
+
+}
+.contedor{
+    max-width: max-content;
+    margin-left: 10em;
+}
+
+/* .clasecontenedor1 {
+    background-color: brown;
+} */

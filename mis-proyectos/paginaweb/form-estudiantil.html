@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos Estudiantil</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<!-- <style>
+.contedor{
+    max-width: max-content;
+    margin-left: 20em;
+}
+
+</style> -->
+<body>
+    <form action="enviar.php" method="post" class="contedor">
+        <h1>Ficha Estudiantil</h1>
+        <!-- DATOS PERSONALES -->
+        <fieldset>
+            <legend><b>DATOS PERSONALES</b></legend>
+            
+            <select name="cedula" id="cedula">
+                <option value="pasaporte">Pasaport</option>
+                <option value="run">RUN</option>
+                <option value="rut">RUT</option>
+                <option value="dni">DNI</option>
+            </select>
+            
+            <label for="cedula"> </label>
+            <input type="text" name="cedula" placeholder="Numero de Identificacion" autofocus  required>
+
+            <label for="name"> NOMBRES</label>
+            <input type="text" name="nombres" id="name" maxlength="10" required>
+
+            <label for="surname">APELLIDOS</label>
+            <input type="text" name="apellidos" id="surname" maxlength="15" required><br><br>
+
+            <label for="genero"> SEXO</label>
+            <select name="genero" id="genero">
+                <option value="masculino">MASCULINO</option>
+                <option value="femenino">FEMENINO</option>
+            </select>
+
+            <label for="nacimiento">FECHA DE NACIMIENTO</label>
+            <input type="date" name="nacimiento" id="nacimiento">
+        </fieldset> 
+<!-- DATOS DIRECCION Y ACADEMICOS -->
+       <fieldset>
+           <fieldset>
+               <legend><b>DIRECCION</b></legend>
+               <div>
+                   
+                   <label for="direction"></label>
+                   <input type="text" name="direction" id="direction" maxlength="30" placeholder="Escriba su Direccion">
+                   
+                   <label for="ciudad">CIUDAD</label>
+                   <input type="text" name="ciudad" id="ciudad">
+                   
+                   <label for="postal">CODIGO POSTAL</label>
+                   <input type="text" name="postal" id="postal">
+                   
+                </div><br><br>
+                
+                <div>
+                    
+                    <span><b>DATOS DE CONTACTO</b></span><br><br>
+                    
+                    
+                    <label for="telefono">TELEFONO</label>
+                    <input type="tel" name="telefono" id="telefono">
+                    
+                    <label for="email">E-MAIL</label>
+                    <input type="email" name="email" id="email">
+                    
+                </div><br><br>
+                
+                <div>
+                    
+                    <span>Cursos Anteriores</span><br>
+                    <label>
+                        <input type="radio" name="curso" value="si"> SI
+                    </label>
+                    <label>
+                        <input type="radio" name="curso" value="no"> NO
+                    </label><br><br>
+                    
+                    
+                    <label for="lenguajes">Lenguaje de programacion a Estudiar</label><br><br>
+                    
+                    <select name="lenguajes" id="lenguajes">
+                        <optgroup label="WEB">
+                            <option value="HTML">HTML</option>
+                            <option value="CSS">CSS</option>
+                            <option value="READ">READ</option>
+                            <option value="JAVASCRIPT">JAVASCRIPT</option>
+                            <option value="PHP">PHP</option>
+                        </optgroup>
+                        <optgroup label="PROGRAMACION">
+                            <option value="PYTON">PYTON</option>
+                            <option value="DELFIN">DELFIN</option>
+                            <option value="OTROS">OTROS</option>
+                            
+                        </optgroup>
+                    </select>
+                    
+                </div><br><br>
+                
+            </fieldset>
+            
+            <fieldset>
+                
+                <legend><b>COMENTARIOS ADICIONALES</b></legend>
+                <textarea name="comentrios" id="comentarios" cols="50" rows="10" ></textarea>
+                
+                
+            </fieldset>
+            
+            
+            
+        </fieldset>
+
+        <button>ENVIAR FICHA</button>
+        
+        
+    </form>
+    
+    
+</body>
+</html>

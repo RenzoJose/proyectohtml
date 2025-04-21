@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTRAS ETIQUETAS DE BLOQUE</title>
+</head>
+
+<!-- Explica nuevas etiquetas de bloque:
+address = se utiliza para aportar informacion de contacto para el article mas cercano o para el body 
+
+blockquote= son citas a ottros documentos o autores
+se puede incluir atributo "cite" para poner enlace al documeto original de la fuente, esto es para efecto de semantica d navegador mas no para mostrar al usuario 
+
+pre=se utiliza para representar codigo de igual forma que se escribio dentro de la etiqueta, es decir la respresentancion visual es igual en la pagina web
+
+div= se usa para dividir la informacion, de forma de estructurarlo correctamente para dar estilos a traves de css o para algo denominado " delegacion de eventos" en JAVASCRIPT
+
+hr= se utiliza para decir al navegador que vamos a cambiar de tema y lo representa a travesde una línea
+ -->
+
+ <style>
+    span{
+        color: coral;
+    }
+
+ </style>
+<body>
+   
+    <address>
+        RENZO BARRUETA <br>
+        Direccion: PARQUE CIUDADANO 2 <br>
+        Salvador Allende 400 <br>
+        CODIGO POSTAL: 400 <br>
+        TLF:953160824
+
+    </address>
+
+    <blockquote cite="https://es.wikipedia.org/wiki/La_vida_es_bella">
+       
+        <h2>PELICULA LA VIDA ES BELLA</h2>
+        <p>
+            La vida es bella (La vita è bella en italiano) <b> <span>es una película italiana dramática de 1997</span></b>, escrita, dirigida y protagonizada por Roberto Benigni. Los actores Nicoletta Braschi, Giorgio Cantarini y Giustino Durano completaron el elenco principal, y la participación especial de Marisa Paredes.
+        </p>
+    </blockquote>
+
+    <pre>
+        basilus 
+                                    forma
+
+    </pre>
+
+    <div>
+        <h2>Datos de Usuario</h2>
+        <p>Nombre</p>
+        <p>Apellido</p>
+        <p>Direccion</p>
+    </div>
+
+    <div>
+        <h2>Datos de Usuario</h2>
+        <p>Nombre</p>
+        <p>Apellido</p>
+        <p>Direccion</p>
+    </div>
+
+    <div>
+        <h2>Datos de Usuario</h2>
+        <p>Nombre</p>
+        <p>Apellido</p>
+        <p>Direccion</p>
+    </div>
+
+    <hr>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, quod eum dolorem itaque nulla nihil, cum unde saepe pariatur voluptates soluta nobis velit in numquam labore exercitationem ullam, harum culpa.</p>
+   
+    <q cite="https://es.wikipedia.org/wiki/La_vida_es_bella"> Pelicula la vida es Bella</q>
+    
+    <pre>
+        <code>
+            span{
+                color: coral;
+            }
+        </code>
+
+    </pre>
+&ast;
+</body>
+</html>

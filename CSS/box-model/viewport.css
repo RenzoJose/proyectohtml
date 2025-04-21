@@ -1,0 +1,102 @@
+
+ @font-face {
+     
+    font-family: 'poppins';
+    src: local('Poppins-Medium'), url(/asset/fuentes/Poppins-Medium.ttf);
+    
+ }
+body{
+    background-color: cadetblue; 
+    color: white;
+    position: relative;
+    min-height: 100vh; 
+    margin: 0;
+    border: 2px solid red;
+    font-family: "Roboto Slab", serif;
+
+
+}
+
+.hombrecito{
+ color: blue;
+ font-size: 2rem;
+}
+
+
+.gente {
+  filter: invert(1);
+    
+}
+ 
+
+
+header{
+    text-align: center;
+    background-color: initial;
+    font-family: 'poppins', sans-serif;
+    
+   
+}
+
+h2{
+    text-align: center;
+    background-color: chartreuse;
+    font-family:'poppins', sans-serif;
+    
+}
+span{
+   line-height: 200px; 
+}
+article{
+    text-transform: capitalize;
+    /* letter-spacing: 2px;
+    word-spacing: 10px; */
+    line-height: 1.4 ;
+    /* text-transform: uppercase;
+    text-transform: lowercase; */
+}
+
+a{
+    color: inherit;
+    text-decoration: overline;
+    text-shadow: 1px -2px rgb(123, 72, 72), 1px -3px #255;
+}
+
+.caja{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+
+    
+}
+
+.caja-1{
+    background-color: rgb(117, 117, 179);
+    width: 95vw;
+    height: 200px;
+    text-align: center;
+    margin: auto;
+
+}
+.caja-2{
+   
+    background-color: chocolate;
+    width: 50%;
+    height: 100px;
+
+    /* max-width: 700px;
+    min-width: 150px;
+   */
+    text-align: center;
+   
+
+}
+footer{ 
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0.5rem 0; 
+    background-color: chartreuse;
+    color:initial;
+    text-align: center;
+}

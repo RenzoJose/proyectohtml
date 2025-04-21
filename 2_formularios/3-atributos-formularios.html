@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos de Formularios</title>
+</head>
+<!-- placeholder = da una pista de loque el usuario tiene que introduir 
+
+requiered = hace que un campo sea obligaorio 
+
+readonly= hace que un campo sea solo lectura
+
+disabled = desactiva el campo, no se pondra escribir en el autofocus
+
+min-max= establece un minimo y un maximo de un campo numerico
+
+maxlenght-minleght = establece el minimo y el maximo de un campo de texto
+
+selected = equivale al checked en los select, sirve para establecer una opcion por defecto
+
+-->
+
+<style>
+    .number1{
+        width: 10em;
+    }
+</style>
+
+<body>
+    <form>
+        <!--  placeholder = da una pista de loque el usuario tiene que introduir -->
+        <input type="text" placeholder="Nombre" required autofocus>
+
+        <!-- readonly= hace que un campo sea solo lectura -->
+        <input type="text" value="saludos" readonly >
+        
+        <!-- disabled = desactiva el campo, no se pondra escribir y no se envia la informacion-->
+
+        <input type="text" value="Disabled" disabled  >
+
+        <!-- selected = equivale al checked en los select, sirve para establecer una opcion por defecto -->
+
+        <select name="numeros">
+            <option value="valor-1">Valor 1</option>
+            <option value="valor-2">Valor 2</option>
+            <option value="valor-3" selected>Valor 3</option>
+        </select>
+
+
+        <!-- min-max= establece un minimo y un maximo de un campo numerico
+         -->
+
+        <input type="number" min="2" ma55555x="5" required class="number1">
+
+<!-- maxlenght-minleght = stablece el minimo y el maximo de un campo de texto -->
+        <input type="text" placeholder="Apellido" minlength="5" maxlength="10" required>
+
+
+        <input type="submit">
+        
+    </form>
+
+
+    
+</body>
+</html>

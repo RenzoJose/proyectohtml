@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    /* margin: 0; */
+    
+}
+main{
+   
+    position: relative;
+    color: white;
+    background-color: cadetblue;
+}
+
+header{
+    background-color: crimson;
+    text-align: center;
+    font-size: x-large;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+[href]{
+    color: white;
+   
+}
+
+h2{
+    position: sticky;
+    top: 8px;
+    background-color: cadetblue;
+}
+

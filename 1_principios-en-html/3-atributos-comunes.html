@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Atributos mas Usados</title>
+
+    <style>
+        .atributo-clase { color: rgb(255, 89, 0);}
+
+    </style>
+</head>
+<!-- algunos atributos globales que estan dispnible para la mayoria d etiquetas en html
+
+class= este atributo se usa para dar estilo a traves de css
+
+id=es un idetificador unico que se utiliza para seleccionar el elemento desde JAVA SCRIP y para hacer navegacion a traves de anclas
+
+title= es un atributo que ayuda a la accesibilidad mostrando una descripcion del elemento al que pertenece 
+
+date= es un atributo que nos permite guardar algun valor en la etiqueta html-->
+<body>
+
+    <p title="ejemplo de class"  class="atributo-clase">tutorial html con la etiqueta "class" clase </p>
+    
+    <p title="identificador de la variable"  id="identificador-id">atributo identificador "ID" de lo mejor</p>
+
+    <p title="ejemplo del atributo title "> etiqueta titulo "title" con tooltip</p>
+    
+    <p title="datos para idenficar la variable"  id="Atributo-dato" data-ejerciodata="Ejercicos de Ejemplo de data te amo html">atributo "data" es datos que pasamos a la etiqueta </p>
+
+    <script>
+        const f = document.getElementById('identificador-id')
+
+       const x = document.getElementById('Atributo-dato')
+
+        console.log(f.textContent)
+        console.log(x.dataset.ejerciodata)
+
+    </script>
+    
+
+
+</body>
+</html>

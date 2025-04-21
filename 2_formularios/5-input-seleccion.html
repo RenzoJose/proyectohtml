@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INPUT DE SELECCION</title>
+</head>
+<!-- 
+radio= permite seleccionar una unica opcion de una lista de opciones
+
+checkbox= permite seleccionar varias opciones de una lista de opciones relacionadas
+
+select=crea una lista  de opciones donde podemos seleccionar una o varias opciones
+nota:
+cada opcion ira dentro de una etiqueta <option></option>
+
+si tenemos muchas opciones podemos ordenarlas por categoria a traves de la etiqueta <optgroup> con el atributo label para nombrar la categoria
+
+
+
+
+-->
+<body>
+    <!-- elementos de seleccion tipo radio -->
+    <h1>ELEMENTOS DE SELECCION</h1>
+    <form>
+        <h2>DEPORTES</h2>
+
+        <!-- importate name="" es obligatorio y informa al navegador que pertenece a la misma categoria
+        de igual forma el value"" que indica el valor que contiene el elemento -->
+
+        <label> BEISBOL
+            <input type="radio" name="deportes" value="besisbol" checked>
+        </label>
+
+        <label> FUTBOL
+            <input type="radio" name="deportes" value="futbol">
+        </label>
+
+        <label> VOLIBOL
+            <input type="radio" name="deportes" value="volibol">
+        </label>
+
+        <label> TENIS
+            <input type="radio" name="deportes" value="tenis">
+        </label>
+
+    </form>
+
+    <!-- elementos de seleccion tipo checkbox -->
+<hr>
+    <form>
+        <h2>Lenguaje de una pagina web</h2>
+        <label>
+            <input type="checkbox" name="web" value="html">HTML
+        </label>
+        <label>
+            <input type="checkbox" name="web" value="css">CSS
+        </label>
+        <label>
+            <input type="checkbox" name="web" value="javascript">JAVASCRIPT
+        </label>
+    </form>
+
+    <!-- elementos de seleccion tipo select basico multiple-->
+    <hr>
+
+    <form>
+       <select name="lenguajes-web" multiple>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="javascript">JAVASCRIPT</option>
+       </select> 
+    </form>
+
+ <!-- elementos de seleccion tipo select basico -->
+    <form>
+        <select name="lenguajes-web">
+         <option value="html">HTML</option>
+         <option value="css">CSS</option>
+         <option value="javascript">JAVASCRIPT</option>
+        </select> 
+    </form>
+
+    <!-- elementos de seleccion tipo select avanzado -->
+    <hr>
+    <form>
+        <select name="autos">
+            <optgroup label="autos-chichos">
+                <option value="sedan">SEDAN</option>
+                <option value="cupet">Cupet</option>
+                <option value="hatchback">Hatchback</option>
+            </optgroup>
+            
+            <optgroup label="camiontas-grandes">
+                <option value="picot">Picot</option>
+                <option value="picot-deportivas">Picot Deportivas</option>
+                <option value="picot-rally">Picot Rally</option>
+            </optgroup>
+        </select> 
+    </form>
+
+    <!-- elementos de seleccion tipo select avanzado datalist que nos permite usar filtro -->
+   
+    <hr>
+    <form>
+        <input type="list" list="autos">
+        <datalist id="autos">
+            <option value="sedan"></option>
+            <option value="cupet"></option>
+            <option value="hatchback"></option>
+            <option value="SUV"></option>
+            <option value="camioneta"></option>
+            <option value="stationwagon"></option>
+            <option value="picot"></option>
+            <option value="picot-deportivas"></option>
+            <option value="picot-rally"></option>
+        </datalist>
+    </form>
+
+    
+</body>
+</html>

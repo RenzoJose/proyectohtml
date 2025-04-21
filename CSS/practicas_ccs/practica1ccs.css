@@ -1,0 +1,73 @@
+/* COMO FUNCIONA CSS
+especificidad CSS = Estabece como de especifico es un selector para saber que estilo aplicar.
+el calculo se realizacon las siguientes formulas 
+ */
+
+/*  formular y reglas 
+el navegador sigue como reglas el valor de la suma de los elemntos
+ejemplo:
+1. etiquetas y pseudo-elementos (0,0,1)
+2. clases atributos y pseudoclases (0,1,0) 
+3. ID (1,0,0)
+4. estilos en linea (1,0,0,0)--> estos son los que ponemos directamente en HTML
+5. important LE GANA A TODO  */ 
+
+/* NOTA: CUANDO APLICAMOS UN !important en la relga nos SOBRE ESCRIBE TODO Y POR ENDE NOS cargados o nos vale madre la especificidad por eso no se debe aplicar Y SE DEBE CONOCER COMO FUNCIONA CSS */
+
+/*  PARA EVITAR ESO SIMPRE USEMOS LAS CLASES */
+
+/* CSS FUNCIONA EN FORMA DE CASCADA ( ES DECIR EL ULTIMO SOBRE ESCRIBE AL PRIMERO) POR LO TANTO, SIEMPRE QUE LA ESPECIFICIDAD SOBRE EL ELEMENTO SEA LA MISMA SE APLICARA LA PROPIDAD ESTABLECIDA 
+EJEMPLO
+
+*/
+/* 1. etiquetas y pseudo-elementos (0,0,1)*/
+/* h1 {
+    background-color: yellow; 
+}
+/* 2. clases atributos y pseudoclases (0,1,0) */
+
+/* .titulo{
+    background-color: brown;
+}
+3. ID (1,0,0) */
+/* #titulo{
+    background-color: blueviolet;
+} */
+/* 4.etiqueta mas clase especificidad (0,1,1) */
+/* h1.titulo{
+    background-color: green;
+} */
+/* 5. etiqueta mas id especificidad (1,1,1) */
+/* h1.titulo#titulo{
+    background-color: coral; */
+
+/* } */ 
+
+/* nota: tener en cuenta que si la especificidad no es la misma la cascada no funciona por eso es recomendable usar clases siempre para que la cascada no se vea afectada*/
+
+h1{
+    color:blueviolet;
+    font-size: 20px;
+}
+/* h1{
+    color:blue;
+} */
+/* 
+.titulo{
+    font-size: xx-large;
+}
+.parrafo1{
+    font-size: large ;
+    color: violet
+  
+}
+.link{
+    color:inherit;
+    
+}
+.lista{
+    color:blue;
+}
+.lista-extra{
+    color:initial;
+} */

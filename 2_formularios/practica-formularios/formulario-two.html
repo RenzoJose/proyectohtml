@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Datos 2</title>
+</head>
+<!-- <style>
+    .formulario{
+        max-width: max-content;
+        margin-left: 1cm;
+    }
+
+    h1{
+        font-size: x-large;
+    }
+
+    select{
+        /* position: relative; */
+        /* display: flex; */
+        width: 24em;
+        height: 6em;
+        
+    }
+
+    
+</style> -->
+
+<body>
+    <form action="enviardatos.html" method="post" class="formulario">
+        <fieldset>
+            <div>
+                  
+                <label for="name-1"><b>Escriba su Nombre:</b></label>
+                <input type="text" name="dato-nombre" id="name-1" placeholder="RENZO" required><br><br>
+                
+                <label for="surname-2"><b>Escriba su Apellido:</b></label>
+                <input type="text" name="dato-apellido" id="surname-2" placeholder="BARRUETA" required><br><br>
+                
+                <label for="email"><b>Escriba su E-mail:</b></label>
+                <input type="email" name="correo" id="email" placeholder="ejemplo@gmail.com" required>
+                
+                
+            </div>
+            
+            <div>
+                <h2>Que valoracion le da a la pagina</h2>
+                <label>
+                   <b>1</b><input type="radio" name="valoracion" value="1" >
+                </label>
+                <label>
+                   <b>2</b><input type="radio" name="valoracion" value="2" >
+                </label>
+                <label>
+                   <b>3</b><input type="radio" name="valoracion" value="3" >
+                </label>
+                <label>
+                   <b>4</b><input type="radio" name="valoracion" value="4" >
+                </label>
+                <label>
+                   <b>5</b><input type="radio" name="valoracion" value="5" >
+                </label>
+
+            </div>
+
+            <div>
+                <h2>Asignatura que has Estudiado</h2>
+                <label>
+                    HTML<input type="checkbox" name="lenguaje" value="HTML">
+                </label>
+                <label>
+                    CSS<input type="checkbox" name="lenguaje" value="CSS" >
+                </label>
+                <label>
+                    JAVASCRIPT<input type="checkbox" name="lenguaje" value="JAVASCRIPT" >
+                </label>
+            </div>
+
+            <div >
+                <h3>Seleccione tu Equipo Ideal</h3>
+                <select name="equipo-futbol" multiple>
+                    <option value="MESSI">MESSI</option>
+                    <option value="CR7">CR7</option>
+                    <option value="MBAPPE">MBAPPE</option>
+                    <option value="HALAM">HALAM</option>
+                </select> 
+            </div>
+
+            <div>
+                <h3>Que Mejorarias del Curso</h3>
+
+                <!-- <label for="mejoras"></label> -->
+                <textarea name="mejoras-curso" id="mejoras" cols="40" rows="10" maxlength="30"></textarea>
+                
+                
+
+            </div>
+
+            <button>Enviar</button> 
+          
+
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>

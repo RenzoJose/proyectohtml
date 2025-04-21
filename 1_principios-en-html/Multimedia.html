@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="/asset/favicon/spartano/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/asset/favicon/spartano/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/asset/favicon/spartano/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/asset/favicon/spartano/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/asset/favicon/spartano/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/asset/favicon/spartano/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/asset/favicon/spartano/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/asset/favicon/spartano/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/asset/favicon/spartano/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/asset/favicon/spartano/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/asset/favicon/spartano/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/asset/favicon/spartano/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/asset/favicon/spartano/favicon-16x16.png">
+<link rel="manifest" href="/asset/favicon/spartano/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<!--  como tener una fuente de iconos con un CDN y se coloca la fuente en la etiqueta head -->
+
+<script src="https://kit.fontawesome.com/8f3cde11a8.js" crossorigin="anonymous"></script>
+
+    <title>METODO GET O POST</title>
+</head>
+<style>
+    video {
+
+        max-width: 30%;
+
+
+    }
+     
+</style>
+
+<body>
+<h1> Metodo post y get </h1>
+    <form action="enviar.html" method="post">
+    <fieldset>
+        <legend><i class="fa-solid fa-circle-user"></i>Datos Personales</legend>
+       <label for="nombre"></label>
+        Nombre
+        <input type="text" required placeholder="campo obligatorio" name="nombre1" >
+        <label for="apellido"></label>
+        Apellido
+        <input type="text" required placeholder="campo obligatorio" name="apellido1">
+        <button>Enviar</button>
+        <input type="reset">
+    </fieldset>
+
+    </form>
+
+    <hr>
+    <h2>introducir imagenes </h2>
+    <img srcset="/asset/imagenes/Captura-pantalla.png 8x, /asset/imagenes/numeros.webp " alt="numeros">
+
+    <!-- introducir imagen tambien con la etiqueta picture -->
+    <hr>
+    <picture>
+        <source srcset="/asset/imagenes/Captura-pantalla.png, /asset/imagenes/numeros.webp " media="1200px">
+
+        
+       <img src="/asset/imagenes/Captura-pantalla.png" alt="vector"> 
+        
+    </picture>
+<!-- introducir musica  -->
+    <hr>
+
+    <audio src="/asset/audio-musica/acnecota.mpeg" controls autoplay></audio>
+<hr>
+<!-- introducir video -->
+<video src="/asset/video/2023-06-04-215320866.mp4" controls poster="/asset/imagenes/IMG-6318.webp"></video>
+
+<hr>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hAgrrW5LM6M?si=Pmm3wl08tjBnF5hQ" ></iframe>
+
+<hr>
+
+<figure></figure>
+    
+</body>
+</html>

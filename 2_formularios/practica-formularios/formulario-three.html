@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Datos 3</title>
+</head>
+<style>
+    .formulario1{
+        max-width: max-content;
+        margin-left:1cm;
+       
+    }
+    h1{
+        margin-left: 1cm;
+    }
+    #servidor-master{
+        width: 5cm;
+    }
+
+  
+</style>
+<body>
+    <h1> Novell Services Login</h1>
+    <form action="eviardatos3.html" method="post" class="formulario1">
+        <fieldset>
+            <div>
+
+                <label for="username">Username</label>
+                <input type="text" name="name" id="username" maxlength="10"  required><br><br>
+                
+                <label for="contrasena">Password</label>
+                <input type="password" name="seguridad" id="contrasena" maxlength="10" required><br><br>
+                
+                <label for="ciudad">City of Employment</label>
+                <input type="text" name="ciudad" id="ciudad" maxlength="10" required>
+                <br><br>
+                
+            </div>
+
+            <div>Web Server
+          
+                <select name="serviores" id="servidor-master">
+                    
+                    <option value="server-1">server-1</option>
+                    <option value="server-2">server-2</option>
+                    <option value="server-3">server-3</option>
+                    <option value="server-4">server-4</option>
+                </select>
+            </div><br><br>
+
+            <div>Place especify your role <br>
+                
+                
+                <label for="admin">
+                    <input type="radio" name="roles" id="admin" value="Admin">
+                    Admin
+                </label><br>
+                
+                <label for="Engineer">
+                    <input type="radio" name="roles" id="Engineer" value="Engineer">
+                    Engineer
+                </label><br>
+                
+                <label for="manager">
+                    <input type="radio" name="roles" id="manager" value="Mananger"> 
+                    Mananger
+                </label><br>
+                
+                <label for="role">
+                    <input type="radio" name="roles"  id="role" value="Role">
+                    Role
+                </label>
+                
+
+            </div><br>
+
+            <div> Single Sing-on to the following <br><br>
+                
+                <label>
+                    <input type="checkbox" name="sesion" value="email">
+                    E-mail
+                </label><br>
+                <label>
+                    <input type="checkbox" name="sesion" value="payroll">
+                    Payroll
+                </label><br>
+                <label>
+                    <input type="checkbox" name="sesion" value="selfservices">
+                    Selfservices
+                </label>
+
+            </div><br>
+
+            <button>Enviar</button> <input type="reset">
+            
+
+        </fieldset>
+
+
+    </form>
+</body>
+</html>
