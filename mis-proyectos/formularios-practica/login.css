@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'roboto';
+    src: url(/asset/fuentes/Roboto-VariableFont_wdth\,wght.ttf);
+}
+body{
+    
+  background-color: bisque;
+  /* font-family: sans-serif; */
+ 
+}
+h1{
+    font-size: xx-large;
+}
+
+form{
+    width: 500px;
+    
+    margin: 200px auto 100px;
+}
+section{
+    width: 210px;
+
+    margin: 35px 25PX 0px 30px;
+}
+
+.login{
+    position: relative;
+    top: 10px;
+
+    display: inline-block;
+    width: 250px;
+    height: 200px;
+   
+    background-color: #fff;
+
+}
+
+.email{
+    position: absolute;
+
+    display: inline-block;
+    width: 250px;
+    height: 230px;
+     
+    background-color: #555;
+    color: #fff;
+}
+
+
+.contenido{
+    width: 180px;
+    height: 100px;
+
+    margin: 40px auto 0px
+}
+.submit{
+   display: block;
+   padding: 5px;
+
+   margin: 15px auto 0;
+   background-color: #6653;
+}

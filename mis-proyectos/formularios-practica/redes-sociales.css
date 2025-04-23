@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    color: #ffff;
+    background-color: rgb(147, 125, 114);
+}
+h1{
+    text-align: center;
+}
+span{
+    display: block;
+}
+input{
+    /* position: relative; */
+    width: 250px;
+    height: 28px;
+}
+button{
+    position: relative;
+    top: 40px;
+    width: 250px;
+    padding: 5px;
+    /* border-radius: 10px; */
+    background-color: rgb(6 102 106 / 0.9);
+    color: inherit;
+    font-weight: 600;
+}
+form{
+
+    width: 680px;
+    height: 327px;
+    
+    margin: 10vh auto 10vh;
+    background-color: rgb(6, 102, 106);
+    border-radius: 0 15px 15px 0;
+
+
+}
+.contenedor{
+    position: relative;
+    width: 650px;
+    margin: 20vh auto 0;
+    background-color: #ffff;
+    border-radius: 0 15px 15px 0;
+    overflow: hidden;
+}
+
+.padre-redes{ background-color: rgb(6, 102, 106);
+    display: inline-block;
+    width: 50%;
+}
+.redes-sociales{
+    display: grid;
+    place-items: center;
+    width: 90%;
+    height:50px ;
+    margin: 15px auto 15px;
+    border-radius: 10px;
+}
+.face{
+    background-color: blue;
+}
+.google{
+    background-color: rgb(188, 16, 16);
+}
+.twiter{
+    background-color: rgb(51, 86, 240);
+}
+.bereal{
+    background-color: black;
+}
+.datos-website{
+    position: absolute;
+    right: 0px;
+    top: 40px;
+    display: inline-block;
+    width: 300px;
+    margin: 0;
+   
+    /* text-align: center; */
+}
+.datos{
+    margin: 15px auto 15px;
+}
