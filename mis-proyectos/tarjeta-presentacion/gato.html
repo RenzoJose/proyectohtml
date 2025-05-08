@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .formulario{
+      background-color: rgba(19, 83, 28, 0.438);
+    }
+  </style>
+</head>
+<body>
+  <button onclick="mostrarFormulario('mascotas')">Mascotas</button>
+<button onclick="mostrarFormulario('autos')">Autos</button>
+<button onclick="mostrarFormulario('personales')">Datos Personales</button>
+<button onclick="mostrarFormulario('bancarios')">Datos Bancarios</button>
+
+<div id="mascotas" class="formulario">
+  <h2>Formulario de Mascotas</h2>
+  <form>
+    <label>Nombre:</label>
+    <input type="text">
+  </form>
+</div>
+
+<div id="autos" class="formulario" style="display:none">
+  <h2>Formulario de Autos</h2>
+  <form>
+    <label>Marca:</label>
+    <input type="text">
+  </form>
+</div>
+
+<div id="personales" class="formulario" style="display:none">
+  <h2>Formulario de Datos Personales</h2>
+  <form>
+    <label>Nombre:</label>
+    <input type="text">
+  </form>
+</div>
+
+<div id="bancarios" class="formulario" style="display:none">
+  <h2>Formulario de Datos Bancarios</h2>
+  <form>
+    <label>Banco:</label>
+    <input type="text">
+  </form>
+</div>
+<img src="https://cdn.sanity.io/images/5vm5yn1d/pro/41c7e7ce298604b0801fc2b1b76371a47e9ebb83-950x633.jpg?fm=webp&q=80" alt="gatos" width="500px">
+
+<script>
+function mostrarFormulario(id) {
+  const formularios = document.querySelectorAll('.formulario');
+  formularios.forEach(f => f.style.display = 'none');
+  document.getElementById(id).style.display = 'block';
+}
+</script>
+</body>
+</html>

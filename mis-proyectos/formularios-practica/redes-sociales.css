@@ -1,66 +1,105 @@
 *{
     box-sizing: border-box;
 }
+@font-face {
+    font-family: 'roboto';
+    src: url(/asset/fuentes/Roboto-VariableFont_wdth\,wght.ttf);
+}
 body{
     margin: 0;
     color: #ffff;
     background-color: rgb(147, 125, 114);
+    font-family: 'roboto';
+    background-image: url(/asset/imagenes/Mar.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
 }
+
 h1{
     text-align: center;
 }
-span{
-    display: block;
+img{
+    position: absolute;
+    left: 5px;
+   
+    width: 20px;
+    height: 20px;
+    
 }
+h2{
+   font-size: 1rem; 
+   color: initial;
+    
+}
+
 input{
-    /* position: relative; */
+    
     width: 250px;
     height: 28px;
+
+    text-align: center;
+    font-weight: 600;
+
+    background-color: rgb(155 155 155 /0.25);
+    border-color: rgb(51 55 240);
+    border-width: 3px;
+    
+    
 }
 button{
     position: relative;
-    top: 40px;
+    top: 20px;
     width: 250px;
-    padding: 5px;
-    /* border-radius: 10px; */
-    background-color: rgb(6 102 106 / 0.9);
+    padding: 10px;
+
+    font-weight: 100;
+
     color: inherit;
-    font-weight: 600;
+    background-color: rgb(6 102 106 / 0.9);
+    border-radius: 5px;
+    
 }
 form{
-
-    width: 680px;
+    position: relative;
+    width: 55vw;
+    max-width: 680px;
     height: 327px;
-    
     margin: 10vh auto 10vh;
-    background-color: rgb(6, 102, 106);
+    
+    background-color: rgba(27, 53, 185, 0.97);
     border-radius: 0 15px 15px 0;
-
 
 }
 .contenedor{
     position: relative;
     width: 650px;
-    margin: 20vh auto 0;
+    height: 100%;
+    margin: 20vh 0;
     background-color: #ffff;
     border-radius: 0 15px 15px 0;
     overflow: hidden;
 }
 
-.padre-redes{ background-color: rgb(6, 102, 106);
+.padre-redes{ background-color: rgb(27 53 185);
     display: inline-block;
     width: 50%;
+    height: 100%;
 }
 .redes-sociales{
+    position: relative;
     display: grid;
+   
     place-items: center;
     width: 90%;
-    height:50px ;
+    height:30px ;
     margin: 15px auto 15px;
     border-radius: 10px;
+    text-decoration: none;
+    color: inherit;
 }
 .face{
     background-color: blue;
+    
 }
 .google{
     background-color: rgb(188, 16, 16);
@@ -74,12 +113,10 @@ form{
 .datos-website{
     position: absolute;
     right: 0px;
-    top: 40px;
     display: inline-block;
     width: 300px;
     margin: 0;
-   
-    /* text-align: center; */
+  
 }
 .datos{
     margin: 15px auto 15px;

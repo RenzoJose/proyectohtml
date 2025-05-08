@@ -14,15 +14,16 @@ body{
 h1{
     font-size: xx-large;
 }
-
+input, label{
+    display: block;
+    margin-bottom: 5px;
+}
 form{
     width: 500px;
-    
     margin: 200px auto 100px;
 }
 section{
     width: 210px;
-
     margin: 35px 25PX 0px 30px;
 }
 
@@ -48,18 +49,24 @@ section{
     background-color: #555;
     color: #fff;
 }
-
+.caja-email{
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 2px;
+    border-left: 0;
+    border-style: inset;
+    border-color: rgb(230, 58, 196)
+}
 
 .contenido{
     width: 180px;
     height: 100px;
-
     margin: 40px auto 0px
 }
 .submit{
    display: block;
    padding: 5px;
-
    margin: 15px auto 0;
+   
    background-color: #6653;
 }

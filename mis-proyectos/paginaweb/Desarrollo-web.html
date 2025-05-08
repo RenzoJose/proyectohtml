@@ -8,52 +8,43 @@
 </head>
 <body>
     <header>
-        <div class="contenido1">
-            
-            <span class="logo">Sparta Web</span>
-            
-            <nav>
-               <a href="">Quienes Somos</a>
+        <span class="logo"><img src="/asset/imagenes/devoper.png" alt="sparta" class="img-header">Sparta Web</span>    
+        <nav>
+            <a href="#desarrollo-web">Quienes Somos</a>
 
-               <a href="">Programas de Estudios </a>
+            <a href="#nuestro-programas">Programas de Estudios </a>
 
-               <a href="">caracteristicas</a>
+            <a href="#caracteristicas">caracteristicas</a>
 
-               <a href="">Contactos</a>
+            <a href="#listos">Contactos</a>
 
-            </nav>
-
-        </div>
+        </nav>
 
     </header>
-    <section id="entrada">
+
+    <!-- primera seccion -->
+    <div class="entrada central">
 
         <h1>Aprende desarrollo Web</h1>
         <h2>Programacion y mucho mas</h2>
         <form action="/mis-proyectos/paginaweb/form-estudiantil.html">
             <button>Aplica aqui</button>
         </form>
-    </section>
+    </div>
+    
+<!-- segunda seccion -->
+   <section class="nuestro-programas central" id="nuestro-programas">
+        <h2>Nuestros Programas</h2>
 
-    <section id="nosotros">
-        <div class="contenedor1">
+        <input type="radio" name="deslizar" id="radio-1" class="radio-1" checked>
+        <input type="radio" name="deslizar" id="radio-2" class="radio-2">
+        <input type="radio" name="deslizar" id="radio-3" class="radio-3">
+        
+      
+                   
+        <div class="container-slider">
 
-            <div class="contenedor-img1"></div>   
-
-            <h2>Desarroladores Web</h2>
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aut incidunt modi consectetur nulla odit fugiat, quisquam ipsam exercitationem soluta placeat consequuntur dolorem. Error ullam hic suscipit non excepturi? Cumque dicta quae voluptates soluta reprehenderit esse tempora, culpa ab? Veniam dolorum exercitationem maxime placeat quibusdam doloribus ex harum ipsa eligendi iste omnis, rerum excepturi tenetur cum facilis sint modi dignissimos repudiandae fugit. Temporibus provident ea eligendi molestiae voluptatum, sunt fugiat.</p>
-            
-        </div>
-
-    </section>
-
-    <section id="nuestro-programas">
-        <div class="clasecontenedor1">
-
-            <h2>Nuestros Programas</h2>
-            
-            <div class="carta">
+            <div class="carta card1">
                 <h3>programador Front-end</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum illum tenetur iusto nisi, deleniti nesciunt illo magni aperiam, fugiat culpa, ipsum praesentium consequuntur quasi possimus! Magnam incidunt nobis quia commodi.</p>
                 <button>Informacion</button>
@@ -73,13 +64,36 @@
                 <button>Informacion</button>
             </div>
             
+        </div> 
+
+         <div class="botones--slider">
+            <label for="radio-1" class="label-1"></label>
+            <label for="radio-2" class="label-2"></label>
+            <label for="radio-3" class="label-3"></label>
         </div>
     </section>
 
-    <div id="caracteristicas">
+<!-- tercera seccion -->
+    <section class="central" id="desarrollo-web">
+        <h2> Somos Developer</h2>
 
-        <div class="contenedor1">
+        <div class="desarrollador">
+           <div class="imagen"><img class="contenedor-img1" src="/asset/imagenes/desarrollador.webp" alt="desarrollo"></div>
+        
+            <div class="parrafo">
 
+                <p>Un grupo de trabajo donde se encargar de diseñar, programar, adaptar, integrar y mantener componentes o subconjuntos de software (clases, módulos, pantallas, rutinas, subsistemas, programas en general), conforme a especificaciones que serán recabadas y analizadas en base a las necesidades de los usuarios, desarrollando así soluciones.
+                Un desarrollador de software es un profesional que se dedica a la creación de software y al desarrollo de aplicaciones que ayudan a las empresas a optimizar sus procesos y mejorar la eficiencia operativa. Su trabajo incluye el diseño, desarrollo y mantenimiento de programas y sistemas operativos.</p>
+                    
+            </div>
+        </div>
+    </section>
+
+<!-- cuarta seccion -->
+    <div class="caracteristicas" id="caracteristicas">
+      
+        <div>
+            <h3>Caracteristicas</h3>
             <ul>
                 <li>✅ 100% online</li>
                 <li>✅ Flexibilidad horarios</li>
@@ -90,10 +104,10 @@
         </div>
     </div>
 
-    <section class="listos">
-        <div class="contenedor1">
+    <section class="final" id="listos">
+        <div class="caracteristicas">
 
-           <h2>Estas listo para programar</h2>
+           <h4>Estas listo para programar</h4>
            <button>Ready</button>      
         </div>
 

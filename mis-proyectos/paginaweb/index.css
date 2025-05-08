@@ -1,41 +1,286 @@
 *{
-    /*  el box-sizing Especifica el comportamiento de las propiedades 'width' y 'height'. */
-    /* en este caso el border-box especifica que debe ajustarse hasta el borde de la caja  esto ayuda al ajuste de pantalla es decir al response*/
-    box-sizing: border-box; 
+       box-sizing: border-box; 
 }
-
+@font-face {
+    font-family: 'roboto';
+    src: url(/asset/fuentes/Roboto-VariableFont_wdth\,wght.ttf);
+}
+html{
+   scroll-behavior: smooth; 
+}
 body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',  Verdana, sans-serif;
+    margin: 0;
+    font-family: 'roboto', 'Lucida', sans-serif;
+
 }
 
-h1{font-size: 4;}
-h2{font-size: 3.5;}
-h3{font-size: 2;}
-p{ font-size: 1.5;}
+h1{ font-size: 4em; margin-top: 0; margin-bottom: 0; padding-top: 2em;}
+h2{font-size: 3.5em; margin-top: 0; padding-top: 1.5em ;}
+h3{font-size: 2em;}
+h4{ font-size: 3.5em; margin: 0;}
+p{ font-size: 1.5em;}
 ul{list-style: none;}
 ul{font-size: 1.5em;}
+nav {display: inline-block;}
+footer{text-align: right;}
+header{
+    position: sticky;
+    top: 0;
+    background-color:rgba(245, 245, 245);
+  
+}
+a{
+    text-decoration: none;
+    color: rgba(245, 2, 34, 0.793);
+    margin-left: 2em;
+   
+    transition: all 0.8s;
+}
 
 button{
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: bold;
-    padding: 10px 30px;
+    padding: 15px 35px;
     border-radius: 10px;
-    border: 2px solid rgb(0,0,0,0);
+    border: 1px solid rgb(0,0,0,0);
     /* sombras box-shadow */
     box-shadow: 2px 2px 10px rgb(0,0,0,0.5);
-    background-color: rgb(151, 112, 13);
-    color: rgb(29, 37, 37);
+    background-color: rgb(64, 151, 13);
+    color: inherit;
 }
-/* propiedad hover es el cambio d color del elemento */
+label{
+    display: inline-block;
+    width: 20px;
+    height: 15px;
+    margin-left: 15px;
+    background-color: #ffff;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+}
+.img-header{
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+}
+
+.logo{
+    
+    color:rgba(36, 112, 9, 0.3);
+    font-family: 'roboto';
+    font-size: 2rem;
+    font-weight: 500;
+}
+/* estilos para centrar con la clase central  */
+.central{
+    text-align: center;
+    
+}
+/* primera seccion  */
+.entrada{
+    height: 95vh;
+    color: #ffff;
+    background-image: linear-gradient(0deg, rgba(0 0 0 / 0.5), rgba(0 0 0 / 0.5)), url(/asset/imagenes/programcionweb.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+ 
+}
+
+.imagen{
+   margin-left: 20px;
+}
+/* tercera seccion Developer (desarrollador) */
+.desarrollador{
+    display: flex;
+   align-items: center;
+   
+} 
+
+.parrafo{
+    height: 32rem;
+    overflow: hidden;
+    line-height:2;
+    text-align: justify;
+    margin: 0;
+    padding: 0 20px 0 20px;
+    
+}
+
+/* segunda seccion (nuestros programas) */
+.nuestro-programas{
+height: 90vh;
+color: #ffff;
+
+background-color: rgb(45 45 45);
+
+}
+.container-slider{
+    position: relative;
+    width: 300vw;
+    height: 60%;
+    display: flex;
+    gap: 10px;
+    transition: 400ms ease-in-out;
+
+}
+.carta{
+    width: 100%;
+}
+.botones--label{
+   margin-top: 20px;
+   width: 100%;
+}
+/* cuarta seccion (caracacteristicas y final) */
+.caracteristicas{
+ display: grid;
+ place-items: center;
+ height: 80vh;
+
+}.final{
+    
+    color: #ffff;
+    background-color: rgb(35, 35, 35);
+    
+}
+
+/* OCULTO LOS PARRAFOS DE LA SECCION NUESTROS PROGRAMAS */
+.nuestro-programas p{
+  visibility: hidden;
+   
+}
+
+
+input[type="radio"]{
+    display: none;
+    visibility: hidden;
+
+}
+
+/* estilos al button con HOVER (CAMBIA DE COLOR EL ELEMENTO)*/
 button:hover{
- background-color: gold;
-
-}
-.contedor{
-    max-width: max-content;
-    margin-left: 10em;
+    background-color: rgb(0, 255, 115);
+   
+   
 }
 
-/* .clasecontenedor1 {
-    background-color: brown;
-} */
+a:hover{
+    transform: translateY(25px);
+    box-shadow: 0 10px 20px rgba(17, 150, 21, 0.734);
+}
+label:hover{
+    scale: 1.2;
+    opacity: 0.5;
+}
+
+/* fondos a cada una de las cartas de la seccion nuestros programas */
+.carta:first-child{
+    background-image: linear-gradient(0deg, rgba(0 0 0 / 0.5), rgba(0 0 0 / 0.5)), url(/asset/imagenes/Frontend-Development.webp);
+    background-size: cover;
+
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(0deg, rgba(0 0 0 / 0.5), rgba(0 0 0 / 0.5)), url(/asset/imagenes/full-stack.jpg);
+    background-size: cover;
+    
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(0deg, rgba(0 0 0 / 0.5), rgba(0 0 0 / 0.5)), url(/asset/imagenes/python.jpg);
+    background-size: cover;
+    
+}
+
+/* enlace  con los input con el contenedor que contiene el contenido que se va a dezlizar */
+.radio-1:checked ~ .container-slider{
+    left: 0;
+    animation: renzo 5s infinite 5s;
+  
+}
+.radio-2:checked ~ .container-slider{
+    left: -100vw;
+    animation: renzo 5s infinite 10s;
+  
+}
+.radio-3:checked ~ .container-slider{
+    left: -200vw;
+    animation: renzo 5s infinite 15s;
+
+}
+
+
+/* @keyframes renzo {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      left: -100vw;
+    }
+
+    0% {
+        opacity: 0;
+        
+      }
+    20% {
+        opacity: 1;
+        
+      }
+      80% {
+        opacity: 1;
+      }
+    100% {
+        opacity: 0;
+        left: -200vw;
+      }
+
+  } */
+
+
+/* estilos a los label */
+.radio-1:checked ~ .botones--slider .label-1, .radio-2:checked ~ .botones--slider .label-2, .radio-3:checked ~ .botones--slider .label-3{
+    opacity: 0.5;
+    scroll-margin: 1.2em;
+    width: 40px;
+  
+}
+/* .label-1{
+    animation: renzo2 5s infinite;
+}
+.label-2{
+    animation: renzo2 5s infinite 5s;
+}
+.label-3{
+    animation: renzo2 5s infinite 10s;
+}
+
+@keyframes renzo2{
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+      scroll-margin: 0.8em;
+      width: 30px;
+    }
+    80% {
+      opacity: 1;
+      scroll-margin: 1.2em;
+      width: 40px;
+    }
+    100% {
+      opacity: 0;
+     
+    }
+ 
+  }
+  
+   */ 

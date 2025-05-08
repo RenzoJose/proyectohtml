@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularios sin JS</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    /* Ocultar radios */
+    input[type="radio"] {
+      display: none;
+    }
+
+    /* Estilo de los botones */
+    .botones label {
+      background-color: #349d57;
+      color: white;
+      padding: 10px 20px;
+      margin: 5px;
+      display: inline-block;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .formulario {
+      display: none;
+      margin-top: 20px;
+      background-color: rgba(19, 83, 28, 0.438);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    /* Mostrar solo el formulario que está seleccionado */
+    #mascota:checked ~ #formMascotas,
+    #auto:checked ~ #formAutos,
+    #personal:checked ~ #formPersonales,
+    #bancario:checked ~ #formBancarios {
+      display: block;
+    }
+
+    img {
+      margin-top: 20px;
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Inputs ocultos -->
+  <input type="radio" name="formulario" id="mascota" checked>
+  <input type="radio" name="formulario" id="auto">
+  <input type="radio" name="formulario" id="personal">
+  <input type="radio" name="formulario" id="bancario">
+
+  <!-- Botones (labels) -->
+  <div class="botones">
+    <label for="mascota">Mascotas</label>
+    <label for="auto">Autos</label>
+    <label for="personal">Datos Personales</label>
+    <label for="bancario">Datos Bancarios</label>
+  </div>
+
+  <!-- Formularios -->
+  <div id="formMascotas" class="formulario">
+    <h2>Formulario de Mascotas</h2>
+    <form>
+      <label>Nombre:</label>
+      <input type="text">
+    </form>
+  </div>
+
+  <div id="formAutos" class="formulario">
+    <h2>Formulario de Autos</h2>
+    <form>
+      <label>Marca:</label>
+      <input type="text">
+    </form>
+  </div>
+
+  <div id="formPersonales" class="formulario">
+    <h2>Formulario de Datos Personales</h2>
+    <form>
+      <label>Nombre:</label>
+      <input type="text">
+    </form>
+  </div>
+
+  <div id="formBancarios" class="formulario">
+    <h2>Formulario de Datos Bancarios</h2>
+    <form>
+      <label>Banco:</label>
+      <input type="text">
+    </form>
+  </div>
+
+  <img src="https://cdn.sanity.io/images/5vm5yn1d/pro/41c7e7ce298604b0801fc2b1b76371a47e9ebb83-950x633.jpg?fm=webp&q=80" alt="gatos">
+
+</body>
+</html>

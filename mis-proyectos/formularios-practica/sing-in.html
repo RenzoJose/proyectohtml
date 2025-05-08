@@ -8,22 +8,32 @@
 </head>
 <body>
     
-    <form action="enviardatos.php">
+    <form action="/mis-proyectos/formularios-practica/contacto-formulario.html" method="get">
+        <!-- INPUT-RADIO ASOCIADOS AL CONTENEDOR, QUE A SU VEZ ESTAN OCULTOS EN CSS CON DISPLAY=NONE -->
+        <input type="radio" name="signed" id="signed-in" required class="entrada-1">
+        <input type="radio" name="signed" id="signed-up" class="entrada-2">
+
+        <!-- CONTENEDOR  DE ASOCIACION LABEL CON INPUT-RADIO -->
         <div class="contenedor">
-            <button class="btn">SING IN</button> <button class="btn">SING-UP</button>
 
-            <br><label for="username">USERNAME</label>
-            <input type="text" name="username" id="username" required>
+            <label for="signed-in" class="btn btn-1"><span>SIGN IN</span></label> <label for="signed-up" class="btn btn-2">SIGN-UP</label>
+        </div>     
+         
+        <!-- FORMULARIO DE VISUALIZACION POR CLASE O POR ID -->
+        <div class="oculto-ver" id="verformulario">
+            <br><label>USERNAME</label>
+            <input type="text" name="username"  required>
 
-            <br><label for="password">PASSWORD</label>
-            <input type="password" name="password" id="password" required>
+            <br><label>PASSWORD</label>
+            <input type="password" name="username" required>
             
-            <br><input type="checkbox" name="signed-in" id="signed-in" class="checkbox"> Keep me Signed In <br>
+            <br><input type="checkbox" name="username"  class="checkbox"> Keep me Signed In <br>
 
             <button class="btn-inferior">SING IN</button>
         </div>
-        <p>Forgot Password?</p>
+      
+        <a href="/mis-proyectos/formularios-practica/registrarse.html">Forgot Password?</a>
     </form>
-
+    
 </body>
 </html>

@@ -3,11 +3,17 @@
 }
 body{
     margin: 0;
+    
 }
 @font-face {
     font-family: 'nintendo';
     src: url(/asset/fuentes/Early\ GameBoy.ttf);
 }
+@font-face {
+    font-family: 'pretendo';
+    src: url(/asset/fuentes/Pretendo.ttf);
+}
+
 p{
     position: relative;
     top: 65px;
@@ -22,8 +28,8 @@ p{
     height:41rem;
     margin: 20px auto 20px;
 
-    border-radius: 10px 10px 100px 10px;
-    background-color: #5553;
+    border-radius: 15px 15px 100px 15px;
+    background-color: rgba(164, 163, 163, 0.5);
     box-shadow: 2px 2px 5px #5555;
 }
 .parte-superior{
@@ -93,6 +99,8 @@ p{
     height: 200px;
 
     background-color: yellowgreen;
+
+    box-shadow: inset 5px 5px 5px 1px #c3e77b, inset -5px -5px 5px 1px #c3e77b;
        
 }
 
@@ -113,8 +121,10 @@ p{
 
 .texto-superior{
 position: absolute;
-left: 40px;
+left: 5.5rem;
 z-index: 10;
+
+font-size: 13px;
 
 color: #fff;
 background-color: rgb(50 50 50);
@@ -130,10 +140,26 @@ background-color: rgb(50 50 50);
     color: #fff;
   
 }
-.text-gameboy{
-   display: block;
+.nintendo{
+    font-family: 'pretendo', 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif; 
+    color: rgb(54, 54, 232);
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.text-nintendo{
 
-   text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    width: 300px;
+    
+}
+.text-gameboy{
+   /* display: block; */
+   font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+   font-size: x-large;
+   font-style: italic;
+   color: rgb(54, 54, 232);
     
 }
 .controles-mando{
@@ -183,7 +209,8 @@ background-color: rgb(50 50 50);
     height: 60px;
 
     background-color: #555;
-    border-radius: 5px;
+    border-radius: 12px;
+    border-color: rgb(100 100 100 / 0.3);
         
 }
 .btn-1, .btn-2{
@@ -191,34 +218,42 @@ background-color: rgb(50 50 50);
     left: 70px;
 
     display: block;
+
+    box-shadow: -1px 0 1px rgb(100 100 100 / 0.9), 1px 0 1px rgb(100 100 100 / 0.9);
     
 }
 .btn-1{
-    bottom: 5px;
+    bottom: 4px;
+}
+.btn-2{
+    top:-3px;
 }
 .btn-3, .btn-4{
     position: absolute;
     bottom: 40px;
 
     display: inline-block;
-        
+
+    box-shadow: -2px 0px 1px rgb(100 100 100 / 0.1);
+
     transform: rotate(90deg);
+    
 }
 .btn-3{
-    left: 30px;
+    left: 40px;
 }
 .btn-4{
-   left: 110px;
+   left: 100px;
 }
 .circle-cruz{
     position: absolute;
-    top: 52px;
-    left: 67px;
+    top: 50px;
+    left: 65px;
     z-index: 10;
 
-    width: 45px;
-    height:45px;
-    overflow: hidden;
+    width: 50px;
+    height:50px;
+    /* overflow: hidden; */
 
     border-radius: 50px;
     background-color: #444;
@@ -234,6 +269,8 @@ height: 140px;
 
 border-radius: 25px;
 background-color: #5553 ;
+box-shadow: inset 1px 1px 1px 1px rgb(155 155 155 / 0.5);
+
 transform: rotate(60deg);
 
 }
@@ -245,11 +282,11 @@ transform: rotate(-90deg);
 }
 .letra-b{
     bottom: 30px;
-    right: -12px;
+    right: -16px;
 }
 .letra-a{
     top:25px;
-    right:-12px;
+    right:-16px;
 }
 .boton-rojo{
     position:relative;
@@ -258,8 +295,9 @@ transform: rotate(-90deg);
     height: 50px;
 
     border-radius: 50px;
+    border-color: rgb(255 0 0 / 0.7);
     background-color: red;
-    
+    box-shadow: 1px 1px 1px 1px rgb(255 0 0 / 0.7);
 }  
 .rojo-b{
  top:25px;
@@ -282,14 +320,22 @@ transform: rotate(-90deg);
     height: 70px;
 
     border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px rgb(155 155 155);
+
     transform: rotate(60deg);
 }
 .buttom-2{
     left: 3rem;
 }
+.texto-ab, .select, .start {
+   font-family: 'pretendo', 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif; 
+   color: rgb(54, 54, 232);
+   font-size: 12px;
+   letter-spacing:2.5px;
+}
 .select, .start{
     position: relative;
-    bottom: 8px;
+    bottom: 0.5rem;
 
     display: inline-block;
 
@@ -298,7 +344,7 @@ transform: rotate(-90deg);
 }
 .select{
     
-    left:-35px ;
+    left:-30px ;
 }
 .start{
     
@@ -326,6 +372,7 @@ transform: rotate(-90deg);
 
     border-radius: 2px;
     background-color: #5555;
+    box-shadow: inset 1px 25px 2px rgb(120 120 120 / 0.5), 1px 1px 2px rgb(120 120 120 / 0.5);
    
 }
 

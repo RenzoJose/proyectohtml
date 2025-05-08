@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:flex-start;/* flex-star / center/ flex-end /space-between / space-around / space-evenly*/
+    /* align-items: baseline; stretch, flex-start, flex-end, center, baseline
+    */
+    /* align-content: space-evenly ; */
+    height: 30vh;
+    margin-bottom: 10px;
+    background-color: rgb(155 155 155 /0.8);
+
+}
+
+.items{
+    /* width:10%;
+    height: 20%; */
+    font-size:large;
+    text-align: center;
+    border-style: solid;
+    border-radius: 10px;
+    flex: 1 2 200px;
+ 
+}
+/* .elemento-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:10%;
+    height: 25%;
+   flex-grow: 1;
+   flex-shrink: 2;
+} */
+
+/* .elemento-b{
+    width:10%;
+    height: 20%;
+}
+
+.hijosflex-10{
+    width:10%;
+    height: 20%;
+}  */
+/*
+.flex-1{
+    flex-direction:row-reverse;  
+    flex-wrap:wrap-reverse; 
+}
+
+.flex-2{
+    flex-direction:column;  row / row-reverse / column / column-reverse
+    flex-wrap:wrap-reverse nowrap / wrap / wrap-reverse
+} 
+
+ .flex-3{
+    flex-flow: column-reverse wrap;
+} */

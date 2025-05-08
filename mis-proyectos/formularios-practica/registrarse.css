@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'roboto';
+    src: url(/asset/fuentes/Roboto-VariableFont_wdth\,wght.ttf);
+}
+body{
+    margin: 0;
+    font-family: 'roboto';
+}
+h1{
+    margin-top: 8%;
+    margin-bottom: 7%;
+}
+h2{
+    margin-top: 8%;
+    margin-bottom: 8%;
+    margin-left: 16%;
+    
+    
+}
+section{
+    width: 100%;
+    height: 100%;
+}
+img{
+    position: absolute;
+    left: 5px;
+
+    width: 1.8rem;
+    height: 1.8rem;
+    overflow: hidden;
+}
+button{
+    padding: 10px ;
+
+    font-weight: 300;
+
+    color: #ffff;
+    background-color: #f3342e;
+    border: 0;
+    box-shadow: 2px 2px 3px 1px #a7b3b2;
+    
+}
+
+form{
+    position: relative;
+
+    display: flex;
+    width: 55vw;
+    min-width: 670px;
+    height: 55vh;
+    margin: 20vh auto 0;
+
+    border: 1px solid rgb(155 155 155/0.9);
+    box-shadow: -1px -1px 0.5px  rgb(100 105 80/.9), 2px 2px 10px 2px rgb(135, 143, 105);
+
+}
+form, .circle{
+    align-items: center;
+    /* justify-content: center; */
+}
+.registro{
+
+    margin-left: 10%;
+    overflow: hidden;
+
+    color: rgb(93, 88, 88);
+    
+}
+
+.datos{
+
+    display: block;
+    width: 80%;
+    margin-bottom: 9%;
+
+    font-size: 1rem;
+   
+    color:inherit;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid;
+
+}
+
+.circle{
+    position: absolute;
+    left: 52%;
+
+    display: grid;
+    place-items: center; 
+    width: 50px;
+    height: 50px;
+
+    background-color: #eddddd;
+    border-radius: 50px;
+    
+}
+
+.iniciar-sesion{
+
+    overflow: hidden;
+
+    color: #ffff;
+    background-color: #11CFBC;
+    box-shadow: -2px -2px 2px  rgb(100 105 80/.9) 
+}
+.redes{
+    position: relative;
+    
+    display: grid;
+    place-items: center;
+    width: 80%;
+    height: 3rem;
+    margin: 0 auto 10%; 
+   
+    text-decoration: none;
+
+    color: inherit;
+  
+}
+.face{
+    background-color: #0042E0;
+}
+.twiter{
+    background-color: #00acee;
+}
+.correo{
+    background-color: #304948;
+}

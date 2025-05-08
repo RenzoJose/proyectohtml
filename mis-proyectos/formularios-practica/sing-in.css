@@ -1,34 +1,38 @@
 *{
     box-sizing: border-box;
 }
+@font-face {
+    font-family: 'roboto';
+    src: url(/asset/fuentes/Roboto-VariableFont_wdth\,wght.ttf);
+}
 body{
     position: absolute;
-
     width: 100%;
     height: 100%;
-
     margin: 0;
+
+    font-family: 'roboto', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+    color: #fff;
 
     background-image: url(/asset/imagenes/puente-manhattan.jpeg);
     background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
-
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
- 
+    background-attachment: fixed;
+    
 }
-p{
+a{
     display: block;
-
     width: 22rem;
     padding-top: 5px;
-
     margin: auto;
-    border-top: 2px solid;
-    border-color: inherit;
 
     text-align: center;
+    text-decoration: none;
+
+    color:#ffff;
+    border-top: 2px solid;
+    
     opacity: 0.5;
    
 }
@@ -37,44 +41,97 @@ label{
 }
 input{
     margin-bottom: 1rem;
+
     border-radius: 1rem;
 }
 
 .contenedor{
     width: 300px;
-    margin: 25vh auto 10vh;
+    margin: 20vh auto 0;
 
     text-align: center;
 }
 .btn{
-    margin-bottom: 2rem;
-    
+    display: inline-block;
+    margin-bottom: 1.5em;
+    margin-left: 1em;
+
     font-size: 1.5rem;
     font-weight: inherit;
-
-    border: 0;
+    cursor: pointer;
     color: inherit;
-    background-color: transparent;
     
 }
+
 .checkbox{
    opacity: 0.5;
 }
 .btn-inferior{
     
     padding: 0.5em 5em 0.5em;
-
-    border: 0;
-    border-radius: 1em;
-
+    
     font-weight: inherit;
     
     color:inherit;
     background-color: rgb(0 0 255/0.7);
-    
+
+    border: 0;
+    border-radius: 1em;
+ 
 }
+.oculto-ver{
+    display: none;
+    width: 300px;
+    margin:  0 auto 10vh;
+    text-align: center;
+}
+/* LLAMA AL SELECTOR POR SU ATRIBUTO */
+/* AQUI ES DONDE SE OCULTAN LOS INPUT RADIO */
+input[type="radio"] {
+    display: none;
+  }
+
+  /* SE APLICAN PSEUDO-CLASES DE POSICION MOUSE hover */
 .btn-inferior:hover{
 
     background-color: blue;
     box-shadow: 2px 2px 3px 3px blue, 2px 2px 3px 3px rgb(242, 0, 255);
+}
+.btn-1:hover{
+    text-decoration:underline;
+    text-decoration-color: blue;
+    Text-transform:lowercase;
+    /* Text-shadow: 1px 1px 1px; */
+}
+.btn-1:active{
+ color: blue;
+}
+
+.btn-2:hover{
+    text-decoration:underline;
+    text-decoration-color: blue;
+    Text-transform:lowercase;
+}
+.btn-2:active{
+    color: blue;
+   }
+
+   /* llamada desde los ID (2,1,0) */
+
+/* #signed-in:checked ~ #verformulario{
+    display: block;
+}
+#signed-up:checked ~ #verformulario{
+    display: none;
+} */
+
+/* NOTA: LA PSEUDOCLASE checked TE DICE SI SE HIZO CLICK Y SE ACTIVA LA SELECCION DEL ELEMENTO*/
+/*  NOTA2: LA TILDE INDICA EL HERMANO SIGUIENTE ES DECIR QUE ESTA AL MISMO NIVEL  */
+
+ /* llamada desde la clase (0,3,0)(especifidad menor que con ID )  */
+.entrada-1:checked ~ .oculto-ver{
+    display: block;
+}
+.entrada-2:checked ~ .oculto-ver{
+    display: none;
 }
