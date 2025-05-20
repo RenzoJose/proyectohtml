@@ -36,7 +36,7 @@ p{
     position: relative;
     height: 3.5rem;
 
-    border-bottom: 5px solid rgba(155, 155, 155, 0.1);
+    border-bottom: 5px solid rgba(120 120 120 / 0.18);
 }
 
 .superior-1{
@@ -47,7 +47,7 @@ p{
     width: 0px;
     height: 3.5rem;
     
-    border-color: rgb(155, 155, 155, 0.1);
+    border-color: rgba(120 120 120 / 0.18);
     border-style: solid;
     
 }
@@ -59,7 +59,7 @@ p{
     width: 0px;
     height: 3.5rem;
    
-    border-color: rgb(155, 155, 155, 0.1);
+    border-color: rgba(120 120 120 / 0.18);
     border-style: solid;
     
 }

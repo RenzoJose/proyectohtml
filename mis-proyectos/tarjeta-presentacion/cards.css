@@ -1,0 +1,46 @@
+*{box-sizing: border-box; font-family: "Lato", monospace;}
+body{height: 100vh;background-color: azure;}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); */
+p{
+    text-align: center;
+}
+button{
+    width:5em;
+    height:2.5em;
+}
+.general{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 0.5rem;
+   height: 100%;
+}
+.cards{
+    position: relative;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center; */
+    width: 25rem;
+    height: 25rem;
+    border: 2px solid;
+    background-color: aqua;
+    border-radius: 2em;
+    transition: 300ms;
+}
+.card-1{
+    position: relative;
+}
+.img-1{
+    
+    /* z-index: 5; */
+    width: 24rem;
+    height: 25rem;
+    background-image: url(/asset/imagenes/h.png);
+  
+    background-repeat: no-repeat;
+    /* mix-blend-mode: multiply; */
+    background-color: transparent;  
+    transition: 300ms;
+    filter: drop-shadow(100px 100px 100px #0000);
+}

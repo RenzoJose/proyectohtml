@@ -1,0 +1,285 @@
+*{box-sizing: border-box;}
+html{scroll-behavior: smooth; background-color: #3e2b32;}
+body{
+    position: relative; 
+    max-width: 1900px;
+    height: 100dvh;
+    margin: 0 auto; 
+    font-family: 'Times New Roman', Times, serif;
+}
+h2{display: none;}
+h3{ text-align: center; margin: 0;}
+footer{background-color: #4442422c;}
+img{max-width: 100%;}
+nav{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 1rem;
+    font-size: clamp(0.5rem, 4vw, 1.8rem);
+  
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+  
+    background-color: rgba(0, 0, 0, 0.522);
+    opacity: 0.8;
+}
+/*Formuario iniciar sesion*/
+
+.lenyenda{
+    background-color: #d31724;
+    border-radius: 0.8rem;
+    letter-spacing: 2px;
+}
+.formulario-iniciar-sesion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: clamp(23em, 35vw, 36em);
+    height: 15em;
+    margin: 10vh auto;
+    font-size: 1.8em;
+    color: white;
+    background-image: linear-gradient(0deg, rgba(0 0 0 / 0.5), rgba(0 0 0 / 0.5)), url(/asset/imagenes/img-cine/pantalla-cine.jpg);
+    background-size: cover;
+}
+.formulario-registrate-aqui{
+    color:currentColor;
+}
+.formulario-btn-ingresar{
+    width: 18rem ;
+    height: 3rem;
+    background-color: #b5121c;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    border-radius: 0.4rem;
+    border-color: #b5121c;
+    color:currentColor;
+   
+}
+.formulario-input{
+
+    width: 22rem ;
+    height: 3rem ; 
+    
+    font-size: x-large;
+    border-radius: 0.4rem;
+    border-color: transparent;
+    background-color: whitesmoke;
+    box-shadow: inset 1px 1px 3px #b5121c, inset -1px -1px 3px #b5121c, 1px 1px 3px #b5121c, -1px -1px 3px #b5121c ;
+
+}
+
+.pie-pagina{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #4442422c;
+    overflow: hidden;
+}
+
+/* header */
+.redsocial{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 13em;
+}
+.redsocial__img{
+    width: clamp(1.5em, 3vw, 2em);
+    height: clamp(1.5em, 3vw, 2em);
+    opacity: 0.8;
+}
+.sesion{
+    display: flex;
+    justify-content: space-evenly;
+    width: 45em;
+}
+.sesion__menu{
+    
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+ 
+
+    font-size: large;
+    text-decoration: none;
+
+    color: white;
+    box-shadow: inset -2px -2px 3px 2px #0001;
+    
+}
+
+.sesion__menu__registrase{
+    background-color:#545454;
+}
+.sesion__menu__iniciar-sesion{
+    background-color: #b5121c;
+ 
+}
+/* menu */
+
+.navegacion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+}
+.navegacion__logo{
+    font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+    font-size: clamp(1.5em, 7vw, 5em);
+    color:#b5121c;
+    font-weight: bolder;
+
+}
+.navegacion__menu{
+    padding: 0.2rem 0.3rem;
+    border-radius: 0.5rem;
+    color: #b5121c;
+    text-decoration: none;
+}
+
+/* contenido pelicula*/
+.contenido{
+  
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    min-height:  100vh;
+
+}
+.contenido__pelicula{
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 0 0 20px 20px;
+    transition: 300ms;
+/* conectamos la animacion creada con las imaganes */
+    view-timeline-name: --peliculaanime; /* creamos una linea de time y le asignamos un nombre*/
+    animation: animacion-peliculas; /* conectamos la animacion antes creada con nuestra linea de tiempo*/
+    animation-fill-mode: both; /* le decimos el modo de animacion que funcion tanto al entrar como al salir*/
+    animation-timeline: --peliculaanime; /*conectamos la animacion con la linea de tiempo anterior*/
+    animation-range: entry 25% cover 50%;/* definimos que la animacion de ejecute basado en la posicion del elemento en la pantalla*/
+
+}
+.pelicula__img{
+    width: 300px;
+    height: 350px;
+   
+}
+
+.btn {
+    padding: 10px 20px 10px 20px;
+    border:0;
+    font-size: 20px;
+    text-decoration: none;
+    background: #d60354;
+    background-image: linear-gradient(to bottom, #3e2b32, #b82b2b);
+    font-family: Arial;
+    color: #ffffff;
+}
+
+.pie-pagina__box{
+    width: 10rem;
+    height: 10rem;
+   
+}
+.pie-pagina__box-redsocial{
+    display: flex;
+    flex-flow: column-reverse wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 10rem;
+    height: 10rem;
+    overflow: hidden;
+    
+}
+
+.pie-pagina__box-redsocial__img{
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    
+}
+@media screen and (max-width: 950px){
+    .sesion{
+        width: 100%;
+        margin: 1rem 0; 
+        justify-content: space-evenly;
+    }
+    .redsocial{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+
+    }
+}
+@media screen and (width <=720px){
+   .sesion{
+        display:none;
+  
+    }
+
+} 
+@media screen and (width <=480px){
+    .pie-pagina__box{
+        display:none;
+    }
+
+}
+.anclas:hover{
+    box-shadow: 0 2px 5px 2px #f39c12, 0 -2px 5px 2px #f39c12 ;
+    transition: 300ms;
+}
+
+.navegacion__menu:hover{
+    transform: scale(1.1);
+    text-shadow: 1px 1px 2px  #b5121c;
+    transition: 300ms;
+}
+.contenido__pelicula:hover{
+    transform: scale(1.1);
+}
+.btn:hover {
+
+    box-shadow: inset 0 2px 1rem #b5121c;
+}
+
+.sesion__menu__registrase:hover{
+    transform: scale(1.1);
+    transition: 300ms;
+}
+.sesion__menu__iniciar-sesion:hover{
+    transform: scale(1.1);
+    transition: 300ms;
+}
+.formulario-btn-ingresar:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 1px 30px;
+    transition: 300ms;
+}
+
+/* creamos  la animacion en funcion del scroll con @keyframes desde inicio con from hasta el final con to  */
+@keyframes animacion-peliculas{
+    from{
+        opacity: 0;
+        scale: 10%;
+    }
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+
+}
+

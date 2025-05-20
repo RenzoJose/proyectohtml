@@ -1,0 +1,62 @@
+*{box-sizing: border-box;}
+html{background-color: rgba(72, 164, 109, 0.559);}
+span{
+   display: flex;
+   justify-content: flex-end;
+   width:22.5rem;
+   margin: 0.8rem 0 0;
+   color: white;
+body{
+    font-family: 'Courier New', Courier, monospace;
+  
+}
+}
+.calculadora{
+    position: relative;
+    display: flex;
+    flex-flow: wrap;
+    align-content: start;
+    width: 25rem;
+    height: 34rem;
+    padding: 0 1rem;
+    margin: 20vh auto;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    font-weight: 800;
+    background-color: rgba(36, 36, 232, 0.9);
+    box-shadow: 2px 2px 2px 1px rgba(20 20 111), -2px -2px 2px 1px rgba(20 20 111)
+    
+}
+.pantalla{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width:23.5rem;
+    height: 5rem;
+    margin: auto;
+    font-size: 3rem;
+    background-color: white;
+    border-radius: 1rem;
+    background-color: rgba(178, 193, 48, 0.815);
+    box-shadow: inset 1px 1px 2px 1px;
+    overflow: hidden;
+    
+}
+.botones{
+    height:75% ;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    align-items:center;
+    color: white;
+  
+}
+.numeros{
+    width: 5.5rem;
+    height: 3.5rem;
+    border-radius: 0.5rem;
+    color:inherit;
+    font-size: 1.5rem;
+    font-weight: 500;background-color: rgba(20, 20, 111, 0.355);
+    box-shadow: inset 1px 1px 3px 1px rgba(20, 20, 111, 0.355);
+}

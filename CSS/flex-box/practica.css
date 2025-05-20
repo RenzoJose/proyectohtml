@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'roboto';
+    src: url(/asset/fuentes/Roboto-Italic-VariableFont_wdth\,wght.ttf);
+}
+/* html{
+    background-color: black;
+} */
+span{
+    display: flex;
+    margin-left: 10px;
+}
+body{
+ 
+    margin: 0;
+    
+    font-family: 'roboto';
+    height: 100%;
+}
+h1{
+    font-size: 6vw;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+}
+h2{
+    display: none;
+}
+h3{
+    margin: 0;
+}
+ul{
+    list-style: none;
+    margin-right: 10px;
+}
+li{
+    display: inline-block;
+}
+
+.hereo{
+  display: flex;
+    flex-flow: column wrap;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://picsum.photos/seed/picsum/1200/520");
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+article{
+    flex: 0 0 50%;
+    text-align: center;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    font-size: 2rem ;
+    font-weight: 500;
+    background-color: rgba(149, 134, 134);
+    color: #ffff;
+}
+img{
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+   
+    
+}
+.header-1{
+    display: flex;
+    flex-flow: wrap;
+    align-items: baseline;
+    justify-content: space-between; 
+    font-size: 2rem;   
+    background-color: rgb(149, 134, 134);
+    
+  
+}
+.imagenes{
+    position: relative;
+    width: 100%;
+   text-align: center;
+ 
+
+    overflow: hidden;
+}
+
+
+.img-hijo{
+    flex:1 1 200px;
+}
+
+
+
+/* practica responsive con flexbox (flex) sin media queries */
+.flex-padre-responsive{
+display: flex;
+flex-wrap: wrap;
+}
+.flex-hijos-responsive{
+flex: 1 1 250px;/* donde el flex-basis (250px) establecera el punto de crecimiento y reducion de los elementos, ese sera su punto de quibre, aplicado a la tabla inferir */
+border: medium solid ;
+border-color: inherit;
+color:white;
+text-align: center;
+}
+
+
+
+
+/* MANTIENE ESTOS ESTILOS MAXIMO HASTA 1100PX, ES DECIR CUANDO SUBAS MAS DE 1100PX SE COLOCARAN LOS ESTILOS ORIGINALES DEL INICIO DE CSS en este caso el header*/
+@media screen and (max-width: 1100px){
+  
+   .header-1{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+   } 
+    ul{
+       text-align: center;
+    }
+  
+}
+
+/* MANTIENE ESTE ESTILO MINIMO HASTA 1100PX, ES DECIR CUANDO BAJES DE 1100PX SE COLOCARAN LOS ESTILORS ORIGINALES DEL INICIO DE CSS */
+@media screen and (min-width: 1100px){
+  
+ .contendio-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.items-order{
+    order:1;
+}
+}
+  /* @media screen and (max-width: 470px){
+    .header-1, .imagenes{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+       
+    }
+    ul, li{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+   .imagenes{
+       width: 100%;
+       
+    }
+}
+@media screen and (max-width: 327px){
+  
+    ul, li{
+        display: flex;
+        flex-direction: column;
+    } */
+/* } */
+/* @media screen and (min-width: 1200px){
+      .contendio-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+} */
