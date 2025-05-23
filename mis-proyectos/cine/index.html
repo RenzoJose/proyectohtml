@@ -6,15 +6,32 @@
     <link rel="stylesheet" href="./index.css">
     <title>CINE RENZO</title>
 </head>
-<script src="https://kit.fontawesome.com/8f3cde11a8.js" crossorigin="anonymous"></script>
+
 <body>
     <header>
+        
         <div class="redsocial">
-            <a href="./sesion.html"><i class="fa-solid fa-bars fa-fade fa-2xl"></i></a>
+           
+            <i class="fa-solid fa-bars fa-fade fa-2xl barra" style="font-size: 1.8rem; color: #d41652;" ></i>
+            
+            <div class="slaiderbar">
+                <div class="slaiderbar-icono">
+                                        
+                    <i class="fa fa-times cierrex" aria-hidden="true"></i>
+                </div>
+
+                <ul class="slaiderbar-menu">
+                    <li class="slaiderbar-menu__li" ><a href="#">Historia</a></li>
+                    <li class="slaiderbar-menu__li"><a href="#">Nosotros</a></li>
+                    <li class="slaiderbar-menu__li"><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+
             <a href=""><img src="/asset/iconos/iconos-redes/ico-facebook.webp" alt="" class="redsocial__img anclas"></a>
             <a href=""><img src="/asset/iconos/iconos-redes/ico-instagram.webp" alt="" class="redsocial__img anclas"></a>
             <a href=""><img src="/asset/iconos/iconos-redes/cmk-x.webp" alt="" class="redsocial__img anclas"></a>
         </div>
+
         <div class="sesion">
             <a href="" class="sesion__menu anclas">Conocenos</a>
             <a href="" class="sesion__menu anclas">Otros servicos </a>
@@ -22,18 +39,19 @@
             <a href="" class="sesion__menu sesion__menu__registrase anclas">REGISTRARSE</a>
             <a href="./sesion.html" class="sesion__menu sesion__menu__iniciar-sesion anclas">INICIAR SESION</a>
         </div>
-
+      
     </header>
+
     <div class="navegacion">
         <div class="navegacion__logo">CINEMAX-REN &TRADE;</div>
         <nav>
             <a href="" class="navegacion__menu anclas">CINES</a>
             <a href="" class="navegacion__menu anclas">CARTELERAS</a>
-            <a href="" class="navegacion__menu anclas">PELICULAS</a>
+            <a href="#contenido" class="navegacion__menu anclas">PELICULAS</a>
             <a href="#pie-pagina" class="navegacion__menu anclas">PROMOCIONES</a>
         </nav>
     </div>
-    <div class="contenido">
+    <div class="contenido" id="contenido">
         <section class="contenido__pelicula">
             <h2>pelicula</h2>
             <img src="/asset/imagenes/img-cine/peli_1.jpeg" alt="peli_1" class="pelicula__img">
@@ -111,5 +129,7 @@
            
         </div>
     </footer>
+    <script src="https://kit.fontawesome.com/8f3cde11a8.js" crossorigin="anonymous"></script>
+    <script src="/mis-proyectos/cine/index.js"></script>
 </body>
 </html>

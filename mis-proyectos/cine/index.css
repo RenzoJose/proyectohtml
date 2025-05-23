@@ -11,11 +11,13 @@ h2{display: none;}
 h3{ text-align: center; margin: 0;}
 footer{background-color: #4442422c;}
 img{max-width: 100%;}
+
 nav{
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    width:100%;
     margin-top: 1rem;
+   
     font-size: clamp(0.5rem, 4vw, 1.8rem);
   
 }
@@ -24,12 +26,13 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    padding-top: 10px;
+    /* align-items: center; */
+    padding: 0.6rem 0 0.6rem;
   
     background-color: rgba(0, 0, 0, 0.522);
     opacity: 0.8;
 }
+
 /*Formuario iniciar sesion*/
 
 .lenyenda{
@@ -38,6 +41,7 @@ header{
     letter-spacing: 2px;
 }
 .formulario-iniciar-sesion{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,14 +72,26 @@ header{
 
     width: 22rem ;
     height: 3rem ; 
-    
-    font-size: x-large;
+
+    font-size: large;
     border-radius: 0.4rem;
     border-color: transparent;
     background-color: whitesmoke;
     box-shadow: inset 1px 1px 3px #b5121c, inset -1px -1px 3px #b5121c, 1px 1px 3px #b5121c, -1px -1px 3px #b5121c ;
 
 }
+.box-input{
+    position: relative;
+}
+.fa-lock{
+    position: absolute;
+    color:#b5121c;
+    opacity: 0.7;
+    top:0.7rem;
+    left: 0.3rem;
+    font-size:inherit ;
+}
+
 
 .pie-pagina{
     display: flex;
@@ -164,7 +180,7 @@ header{
     border-radius: 0 0 20px 20px;
     transition: 300ms;
 /* conectamos la animacion creada con las imaganes */
-    view-timeline-name: --peliculaanime; /* creamos una linea de time y le asignamos un nombre*/
+    view-timeline-name: --peliculaanime; /* creamos una linea de timenpo y le asignamos un nombre*/
     animation: animacion-peliculas; /* conectamos la animacion antes creada con nuestra linea de tiempo*/
     animation-fill-mode: both; /* le decimos el modo de animacion que funcion tanto al entrar como al salir*/
     animation-timeline: --peliculaanime; /*conectamos la animacion con la linea de tiempo anterior*/
@@ -172,6 +188,7 @@ header{
 
 }
 .pelicula__img{
+   
     width: 300px;
     height: 350px;
    
@@ -208,27 +225,73 @@ header{
 .pie-pagina__box-redsocial__img{
     width: 2.5rem;
     height: 2.5rem;
-    text-align: center;
+    
     
 }
+
+.slaiderbar {
+    position: absolute;
+    top:0;
+    z-index: 10;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    padding: 0 1rem;
+      
+    background-color: white;
+   
+    transition: all 300ms linear;
+    transform: translate(-500%);
+}
+.barra{
+    cursor: pointer;
+}
+
+.show-slaiderbar {
+  transform: translate(-10%);
+}
+.fa-times {
+  font-size: 1.5rem;
+  color: #e94949;
+  cursor: pointer;
+}
+
+
 @media screen and (max-width: 950px){
     .sesion{
         width: 100%;
         margin: 1rem 0; 
         justify-content: space-evenly;
     }
-    .redsocial{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 100%;
-
-    }
+   
 }
+
+
 @media screen and (width <=720px){
    .sesion{
         display:none;
   
+    }
+    .slaiderbar-menu__li{
+        list-style: none;
+    }
+    .slaiderbar{
+        width: auto;
+        height: 4.5rem;
+        justify-content: start;
+    }
+    .slaiderbar-menu{
+        display: flex;
+        padding: 0;
+
+       
+    }
+    .show-slaiderbar{
+       
+        transform: translateX(35%);
+      
     }
 
 } 
@@ -237,7 +300,51 @@ header{
         display:none;
     }
 
+   .show-slaiderbar{
+       
+        transform: translateX(26%);
+       
+    }
+
 }
+
+@media screen and (width <=400px){
+      .show-slaiderbar{
+       
+        transform: translateX(20%);
+    }
+}
+
+@media screen and (width <=350px){
+      .show-slaiderbar{
+       
+        transform: translateX(18%);
+    }
+}
+
+
+.slaiderbar-menu a {
+  display: block;
+  font-size: 1rem;
+  padding: 1rem 1rem;
+  color: rgb(208, 18, 18);
+  transition: all 0.3s linear;
+  text-decoration: none;
+}
+
+/* espacio para el icono dentro del input password del formulario iniciar sesion*/
+input[type=password]{
+    padding-left: 2rem;
+}
+
+
+
+.fa-times:hover {
+  color: rgb(71, 17, 75);
+}
+
+
+
 .anclas:hover{
     box-shadow: 0 2px 5px 2px #f39c12, 0 -2px 5px 2px #f39c12 ;
     transition: 300ms;
@@ -268,6 +375,11 @@ header{
     transform: scale(1.1);
     box-shadow: 1px 1px 30px;
     transition: 300ms;
+}
+
+.slaiderbar-menu a:hover {
+  background: #f39c12;
+  /* padding-left:1.7rem; */
 }
 
 /* creamos  la animacion en funcion del scroll con @keyframes desde inicio con from hasta el final con to  */
