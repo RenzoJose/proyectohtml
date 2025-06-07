@@ -340,9 +340,15 @@ input[type=password]{
 
 
 .fa-times:hover {
-  color: rgb(71, 17, 75);
+  color: #47114b;
 }
 
+.navegacion__menu:hover{
+    background: linear-gradient(to right, #f39c12, #e94949);
+    color: white;
+    font-weight: 600;
+    transition: all 300ms linear;
+}
 
 
 .anclas:hover{
