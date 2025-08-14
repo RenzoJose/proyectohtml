@@ -1,10 +1,5 @@
-*{
-    box-sizing: border-box;
-}
-body{
-    margin: 0;
-    
-}
+*{ box-sizing: border-box;}
+body{margin: 0;}
 @font-face {
     font-family: 'nintendo';
     src: url(/asset/fuentes/Early\ GameBoy.ttf);
