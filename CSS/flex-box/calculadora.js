@@ -2,7 +2,7 @@
 const result    = document.querySelector( '#pantalla' );
 const operation = document.querySelectorAll( '.numeros' );
 
-const btnCalculation = {
+const BtnCalculation = {
     operatorMath(operator){
       return  ['*', '/', '+', '-', '%', '.'].includes(operator)
 
@@ -89,9 +89,26 @@ operation.forEach( btns => {
         const btnValue   = btns.textContent;
 
         // botones  AC / ⬅ / +/- / =
-        btns.id ? btnCalculation[btns.id](btnValue): btnCalculation.default(btnValue)
+        btns.id ? BtnCalculation[btns.id](btnValue): BtnCalculation.default(btnValue)
     })
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
